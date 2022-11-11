@@ -11,11 +11,11 @@ import org.springframework.context.annotation.Configuration;
 @Data
 @ConfigurationProperties(prefix = "aliyun")
 public class AliyunConfig {
-    private String endpoint = "https://oss-cn-hangzhou.aliyuncs.com";
-    private String accessKeyId = "LTAI5tJcxc4sabqZa5wtunZD";
-    private String accessKeySecret = "njPeJWZtErSlvvkn1OK00caiINUivz";
-    private String bucketName = "zhaoyulove";
-    private String urlPrefix = "http://zhaoyulove.oss-cn-hangzhou.aliyuncs.com/";
+    private String endpoint = "";
+    private String accessKeyId = "";
+    private String accessKeySecret = "";
+    private String bucketName = "";
+    private String urlPrefix = "";
 
     @Bean
     public OSS oSSClient() {
