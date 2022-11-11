@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+</head>
+<body>
+<div class="head">
+    <div class="top">
+        <div class="logo"><a href=""><img src="../images/header-logo.png" class="logo-img"></a></div>
+        <div class="top-phone">
+            <div class="phone">
+                <i>服务热线：</i>
+                <span>123456</span>
+            </div>
+        </div>
+    </div>
+</div>
+<form>
+    <div class="login-body">
+        <div class="login-register">
+            <div class="popup-logininfo">
+
+                <div class="login-register_head">
+                    <strong>会员登录</strong>
+                </div>
+                <ul class="nav nav-tabs type">
+                   <li class="active"><a href="#d1" data-toggle="tab">快速登录</a></li>
+                    <li><a href="#d2" data-toggle="tab">普通登录</a></li>
+                </ul>
+                <div class="popup-loginbox tab-content" >
+                    <div id="d1" class="popup-login-quick tab-pane active">
+                        <div class="form-wrapper">
+                            <input type="text"  placeholder="手机号" class="input-info phoneNo" id="loginPhone" maxlength="15">
+                            <p class="phoneTip ">  </p>
+                            <input type="text"  placeholder="请输入短信验证码" id="loginCode" class="input-info1 message" maxlength="6">
+                            <input id="loginCodeBtn" class="smscode" value="获得验证码" readonly>
+                            <p class="msgTip"></p>
+                        </div>
+                        <div class="error">
+                            <p id="loginfail1"></p>
+                        </div>
+                        <div class="login-text">
+                            <p class="popup-agreement">
+                                <span id="loginAgree1" class="loginAgree1">
+                                未注册一嗨租车账号的手机号，登录时将自动注册，且代表您已同意
+                                </span>
+                            </p>
+<!--                            <p class="remember-no">-->
+<!--                                <input type="checkbox" id="remember1">14天免登录-->
+<!--                            </p>-->
+
+                            <!--                        <div class="no-agree"></div>-->
+                            <a href="javascript:void(0)" class="codebtn">登录</a>
+                            <div class="regist">
+                                <label >没有注册？<a href="regist.html">>去注册</a></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" tab-pane popup-login-quick" id="d2" >
+                        <div class="form-wrapper">
+                            <input type="text" name="userTel" placeholder="手机号" class="input-item userTel">
+                            <p class="usernameTip ">  </p>
+                            <input type="password" name="password" placeholder="密码" class="input-item userPsd">
+                            <p class="psdTip"></p>
+                        </div>
+
+                        <div class="error">
+                            <p id="loginfail"></p>
+                        </div>
+                        <div class="login-text">
+                            <p class="popup-agreement">
+                                <input type="checkbox" id="loginAgree" >
+                                请您确认您已同意
+                            </p>
+                            <p class="remember-no">
+                                <input type="checkbox" id="remember">14天免登录
+                            </p>
+
+                            <!--                        <div class="no-agree"></div>-->
+                            <a href="javascript:void(0)" class="btn">登录</a>
+                            <div class="regist">
+                                <label >没有注册？<a href="regist.html">>去注册</a></label>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</form>
+<footer>
+    <div>
+
+    </div>
+</footer>
+<script src="../js/login.js"></script>
+<script type="text/javascript">
+
+</script>
+</body>
+</html>

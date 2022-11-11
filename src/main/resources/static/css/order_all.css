@@ -1,0 +1,90 @@
+
+dd {
+    display: block;
+    /*margin-inline-start: 40px;*/
+}
+
+#content .content-bd {
+    overflow: hidden;
+}
+.header{
+    height: 113px;
+}
+.header-bd, .navigation-bd, .crumbs-bd, .content-bd, .footer-bd {
+    min-width: 1180px;
+    width: 1180px;
+    margin: 0 auto;
+}
+.hide{
+    display: none;
+}
+/*左侧导航*/
+.con-left {
+    float: left;
+    width: 190px;
+    background-color: #f5f5f5;
+    color: #6b6b6b;
+}
+.sub-nav dt {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #e7e7e7;
+    font-weight: 700;
+}
+.sub-nav dd {
+    padding: 6px 0;
+}
+.sub-nav a {
+    position: relative;
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    padding-left: 50px;
+    color: #6b6b6b;
+    border-left: 6px solid #f5f5f5;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+/*.sub-nav a:hover{*/
+/*    color: #23b7b7;*/
+/*}*/
+.sub-nav a:hover, .sub-nav a.ck {
+    background-color: #fff;
+    color: #23b7b7;
+    font-weight: 700;
+    border-left-color: #23b7b7;
+    text-decoration: none;
+}
+/*右侧内容*/
+.col-main{
+    position: relative;
+    width: 970px;
+    float: left;
+    margin-left: 20px;
+}
+/*用户订单信息*/
+.information  {
+    border: 1px solid #e7e7e7;
+
+
+}
+.active{
+    color: #0C0C0C;!important;
+}
+.tab-content #d1 table{
+    width: 90%;
+
+
+}
+
+.tab-content #d1 table .row1{
+    font-weight: bolder;
+}
+
+
+
+
+
+
+

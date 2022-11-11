@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="layui/layui.js"></script>
+</head>
+<body>
+    <!-- 头部导航 -->
+    <div class="header">
+        <!-- header-top -->
+        <div class="header-top">
+            <div class="middle">
+            <ul class="right">
+                <a href="javascript:void(0)">帮助中心</a><span>|</span>
+                <a href="javascript:void(0)">400-321-2202</a><span>|</span>
+                <p href="javascript:void()">微信</p>
+            </ul>
+           <ul class="left">
+               <a href="customer/login.html" class="loginAfter">登陆</a><span>|</span>
+               <a href="customer/regist.html" class="registAfter">注册</a><span>|</span>
+               <a href="" class="bye hide">退出</a>
+              <p class="name" >我的随行</p>
+           </ul>
+        </div>
+        </div>
+        <!-- header-navigation -->
+        <div class="header-navigation">
+            <div class="middle">
+                <!-- log -->
+                <div class="header-img">
+                    <img src="images/header-logo.png" alt="">
+                </div>
+                <div class="header-nav">
+                    <li><a href="index.html" class="header-word header_active">首页<span></span> </a></li>
+                    <li><a href="car_rental/car_filter.html"  class="header-word">去租车<span></span></a></li>
+                    <li><a  href="car_rental/car_select.html"  class="header-word">车型查询<span></span></a></li>
+                    <li><a href="network/businessoutlets.html"  class="header-word">网点导航<span></span></a></li>
+                    <li><a href="customer/customer_center.html"  class="header-word">个人中心<span></span></a></li>
+                    <li><a href="preferential/special_models.html" class="header-word">特价优惠<span></span></a></li>
+                    <li><a href="customer/customer_center.html" class="header-word">我的收藏<span class="myshoucang"></span></a></li>
+                </div>
+           </div>
+        </div>
+    </div>
+    <!-- 取车还车时间选择 -->
+    <div class="withdraw">
+      <div class="middle">
+        <div class="withdraw-select" >
+            <!-- 地点选择 -->
+            <div class="withdraw-qick">
+                <!-- 取车 -->
+                <li class="left">
+                    <label>取车:</label>
+                    <div>
+                        <input type="text" value="苏州" class="layui-input area" >
+                    </div>
+                    <div class="showAll" id="showAll" style="display: none;">
+                      <div class="select">
+                        <span>请选择还车地点:</span>
+                        <div class="select-city" id="select-city">
+
+                        </div>
+                        <div class="select-area" id="select-area">
+
+                        </div>
+                         <div class="select-store" id="select-store">
+
+                        </div>
+                        <div></div>
+                       </div>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="请选择取车门店" class="layui-input in-store">
+                    </div>
+                </li>
+                <!-- 还车 -->
+                <li class="left1">
+                    <label>还车:</label>
+                    <div>
+                        <input type="text" value="苏州" class="layui-input area1">
+                    </div>
+                     <div class="showAll1" id="showAll1" style="display: none;">
+                      <div class="select">
+                        <span>请选择还车地点:</span>
+                        <div class="select-city1" name="select-city1" id="select-city1">
+
+                        </div>
+                        <div class="select-area1" id="select-area1">
+
+                        </div>
+                         <div class="select-store1" id="select-store1">
+
+                        </div>
+                       </div>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="请选择还车门店" class="layui-input in-store1">
+                    </div>
+                </li>
+            </div>
+            <!-- 时间选择 -->
+            <div class="time-select">
+                <div  class="time-qick" >
+                    <!--  -->
+                    <div class="layui-form">
+                        <div class="layui-form-item">
+                          <div class="layui-inline">
+                            <div class="layui-inline" id="test6">
+                              <div class="layui-input-inline">
+                                <input type="text" autocomplete="off" id="test-startDate-1" class="layui-input input-start" placeholder="开始日期">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                  </div>
+
+
+                    <div class="layui-inline">
+                        <div class="layui-input-inline time">
+                        <input type="text" class="layui-input" id="test-limit3" placeholder="HH:mm:ss" value="12:00:00">
+                        </div>
+                    </div>
+                </div>
+                <div class="time-return" >
+                    <!-- 日期 -->
+                      <div class="layui-form">
+                        <div class="layui-form-item">
+                          <div class="layui-inline">
+                            <div class="layui-inline" id="test6">
+                              <div class="layui-input-inline">
+                                <input type="text" autocomplete="off" id="test-endDate-1" class="layui-input " placeholder="结束日期">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- 时间 -->
+                  <div class="layui-inline">
+                    <div class="layui-input-inline time">
+                    <input type="text" class="layui-input" id="test-limit3" placeholder="HH:mm:ss" value="12:00:00">
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="sumbit">
+
+              <a href="car_rental/car_filter.html">
+                  立即选车
+              </a>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- 热租品牌，限时特惠 -->
+    <div class="hot">
+      <div class="middle">
+        <!-- 左边 -->
+        <div class="hot-left">
+            <div class="hot-lable">
+              <!-- 标题 -->
+              <div class="car-logo">
+                <img src="images/index_img/car-logo.svg" alt="">
+              </div>
+              <span>热租品牌</span>
+              <a href="javascript:void(0)">更多</a>
+            </div>
+            <!-- 内容栏 -->
+            <div class="hot-car">
+              <li>
+                <a href="car_rental/car_select.html">
+                <img src="images/index_img/car1.png" alt="">
+                </a>
+              </li>
+              <li>
+                  <a href="car_rental/car_select.html">
+                <img src="images/index_img/car2.jpeg" alt="">
+                </a>
+              </li>
+              <li>
+                  <a href="car_rental/car_select.html">
+                <img src="images/index_img/car3.png" alt="">
+                </a>
+              </li>
+              <li>
+                  <a href="car_rental/car_select.html">
+                <img src="images/index_img/car4.jpg" alt="">
+                </a>
+              </li>
+              <li>
+                  <a href="car_rental/car_select.html">
+                <img src="images/car_img/chepai1.jpeg" alt="">
+                </a>
+              </li>
+              <li>
+                  <a href="car_rental/car_select.html">
+                    <img src="images/car_img/chepai2.jpeg" alt="">
+                </a>
+              </li>
+              <li>
+                  <a href="car_rental/car_select.html">
+                    <img src="images/car_img/chepai3.jpeg" alt="">
+                </a>
+              </li>
+              <li>
+                  <a href="car_rental/car_select.html">
+                    <img src="images/car_img/chepai1.jpeg" alt="">
+                </a>
+              </li>
+
+            </div>
+        </div>
+        <!-- 右边 特价专区-->
+        <div class="hot-right">
+          <div class="hot-table">
+            <span>特价专区</span>
+          </div>
+
+          <!-- 特价专区 -->
+          <div class="hot-special">
+            <img src="images/index_img/tejia.JPG" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 营业网点 - 问题相关 - 更多用车 -->
+    <div class="outlets">
+      <div class="middle">
+        <!-- 营业网点 -->
+        <div class="outlets-maps">
+          <span>营业网点</span>
+          <div class="maps" id="EhiMap" >
+          </div>
+        </div>
+        <!-- 租车相关 -->
+        <div class="related">
+          <span>租车相关</span>
+          <div class="related-content">
+            <div class="related-img">
+              <img src="images/index_img/realted.png" alt="">
+            </div>
+            <ul>
+              <li>Q:租车需要押金吗？</li>
+              <a>
+                想啥呢当然需要
+              </a>
+              </span>
+            </ul>
+            <ul>
+              <li>Q:租车需要押金吗？</li>
+              <a>
+                想啥呢当然需要
+              </a>
+            </ul>
+            <ul>
+              <li>Q:租车需要押金吗？</li>
+              <a>
+                想啥呢当然需要
+              </a>
+            </ul>
+          </div>
+        </div>
+        <!-- 更多用车 -->
+        <div class="more">
+          <span>更多用车</span>
+          <div class="more-content">
+            <li>等待升级</li>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 底部导航栏 -->
+    <div class="index-bottom">
+      <div class="middle">
+          <!-- 账户服务 -->
+          <div class="bottom-account">
+            <ul>
+              <span>新手指南</span>
+              <li><a href="javascript:void(0)">注册新用户</a></li>
+              <li><a href="javascript:void(0)">预定演示</a></li>
+              <li><a href="javascript:void(0)">取消或者修改订单</a></li>
+            </ul>
+            <ul>
+              <span>租车贴士</span>
+              <li><a href="javascript:void(0)">支付方式</a></li>
+              <li><a href="javascript:void(0)">精彩活动</a></li>
+
+            </ul>
+            <ul>
+              <span>售后服务</span>
+              <li><a href="javascript:void(0)">联系售后</a></li>
+                <li><a href="car_rental/upload_plus.html">阿里云上传车辆信息</a></li>
+            </ul>
+            <ul>
+              <span>会员服务</span>
+              <li><a href="javascript:void(0)">忘记密码</a></li>
+              <li><a href="javascript:void(0)">会员充值</a></li>
+              <li><a href="javascript:void(0)">积分说明</a></li>
+
+
+            </ul>
+            <ul>
+              <span>网站帮助</span>
+              <li><a href="javascript:void(0)">注册新用户</a></li>
+
+              <li><a href="javascript:void(0)">联系我们</a></li>
+            </ul>
+            <ul>
+            </ul>
+            <ul>
+
+            </ul>
+
+          </div>
+          <!--相关信息-->
+          <div class="connect">
+            <div class="line-one">
+              <li><a>关于随行</a></li> <span>｜</span>
+              <li><a>移动客户端</a></li> <span>｜</span>
+              <li><a>帮助中心</a></li> <span>｜</span>
+              <li><a>投诉</a></li> <span>｜</span>
+              <li><a>联系我们</a></li>
+            </div>
+            <div class="line-two">
+              <a>
+                Copyright © 2007-2022 苏州随行信息技术服务有限公司  &nbsp;
+                ICP证：沪B2-20140130沪ICP备08010394号 &nbsp;&nbsp;
+                违法和不良信息举报：fuzhaohong@1hai.cn</a>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <script src="layui/layui.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/common.js"></script>
+    <script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=c329c0cfa9d945232b82ccb74441adfb&plugin=AMap.AdvancedInfoWindow">
+    </script>
+    <script type="text/javascript" src="js/map.js"></script>
+
+</body>
+</html>

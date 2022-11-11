@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>订单详情</title>
+    <link rel="stylesheet" href="../css/order_details.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/customer_center.css">
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../layui/layui.js"></script>
+</head>
+<body>
+<!-- 头部导航 -->
+<div class="header">
+    <!-- header-top -->
+    <div class="header-top">
+        <div class="middle">
+            <ul class="right">
+                <a href="javascript:void(0)">帮助中心</a><span>|</span>
+                <a href="javascript:void(0)">400-321-2202</a><span>|</span>
+                <p href="javascript:void()">微信</p>
+            </ul>
+            <ul class="left">
+                <a href="../customer/login.html" class="loginAfter">登陆</a><span>|</span>
+                <a href="../customer/regist.html" class="registAfter">注册</a><span>|</span>
+                <a href="" class="bye hide">退出</a>
+                <p class="name" >我的随行</p>
+            </ul>
+        </div>
+    </div>
+    <!-- header-navigation -->
+    <div class="header-navigation">
+        <div class="middle">
+            <!-- log -->
+            <div class="header-img">
+                <img src="../images/header-logo.PNG" alt="">
+            </div>
+            <div class="header-nav">
+                <li><a href="../index.html" class="header-word">首页</a><span></span></li>
+                <li><a href="../car_rental/car_filter.html"  class="header-word">去租车</a><span></span></li>
+                <li><a  href="../car_rental/car_select.html"  class="header-word">车型查询</a><span></span></li>
+                <li><a href="../network/businessoutlets.html"  class="header-word">网点导航</a><span></span></li>
+                <li><a href="../customer/customer_center.html"  class="header-word">个人中心</a><span></span></li>
+                <li><a href="../preferential/special_models.html" class="header-word">特价优惠</a><span></span></li>
+                <li><a href="../customer/mycollect.html" class="header-word">我的收藏</a><span></span></li>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--个人中心 main-->
+<div id="content">
+    <div class="content-bd">
+
+
+        <!--左侧导航-->
+        <div class="con-left">
+            <!--<div class="sub-nav">
+                <dt>个人中心</dt>
+                <dd>
+                    <a class="ck cc-change" id="exchange-info1">用户信息</a>
+                </dd>
+                <dd>
+                    <a class="cc-change" id="exchange-info2">修改信息</a>
+                </dd>
+                <dd>
+                    <a class="cc-change" id="exchange-info3">修改密码</a>
+                </dd>
+                <dt>我的资产</dt>
+                <dd>
+                    <a class="cc-change">我的优惠券</a>
+                </dd>
+                <dd>
+                    <a class="cc-change">订单管理</a>
+                </dd>
+            </div>-->
+        </div>
+
+        <!--右侧内容-->
+        <div class="col-main">
+            <!--订单信息-->
+            <div class="information">
+                <div class="order_information">
+                    <h1 class="status" th:text="${order.ordSatus}"></h1>
+                    <hr>
+                    <p>
+                        订单号 ：<span class="ordNumber" th:text="${order.ordNumber}"></span> &ensp; | &ensp;
+
+                        租车人：<span th:text="${user.userName}"></span> &ensp; | &ensp;
+                        支付方式：<span>在线支付</span> &ensp; |
+
+
+                    </p>
+                    <form method="post" action="/order_confirm">
+                        <input type="hidden" name="ordNumber" class="ordNumber" th:value="*{order.ordNumber}">
+                        <input type="submit" value="继续支付" id="jixu" onmouseenter="jixuzhifu()">
+                    </form>
+                </div>
+                <div class="order_car_details">
+                    <div class="car_picture">
+                        <img th:src="${car.carImg}" >
+                        <p>租期：<span class="day" th:text="${order.ordLease}">2</span>天</p>
+                    </div>
+                    <div class="order_car_describe">
+                        <div class="car_name">
+                            <p th:text="${car.carName}">大众</p>
+                            <p th:text="${car.carModel}">大众</p>
+                            <p th:text="${car.carCase}">大众</p>
+                            <p th:text="${car.carDisp}">大众</p>
+                        </div>
+                        <div class="car_address">
+                            <table >
+                                <tr>
+                                    <td class="address_a">取车地点</td>
+                                    <td class="address_a">还车地点</td>
+                                </tr>
+                                <tr>
+                                    <td>取车门店:<span th:text="${order.ordPickup}">八万人体育场店</span></td>
+                                    <td>还车门店:<span th:text="${order.ordDropoff}">八万人体育场店</span></td>
+                                </tr>
+                                <tr>
+                                    <td>取车时间:<span th:text="${order.ordPicTime}">2022-08-27 09:00</span></td>
+                                    <td>还车时间:<span th:text="${order.ordDroTime}">2022-08-29 09:00</span></td>
+                                </tr>
+                                <tr>
+                                    <td>取车地址：<span th:text="${order.ordDroAddress}">上海上海市徐汇区斜土路2899号</span></td>
+                                    <td>还车地址：<span th:text="${order.ordPicAddress}">上海上海市徐汇区斜土路2899号</span></td>
+                                </tr>
+
+                            </table>
+                        </div>
+
+
+
+                </div>
+
+                    <div class="order_success">
+                        <input id="ordNumber" name="ordNumber" type="hidden"  th:value="${order.ordNumber}">
+                        <button class="order_success_button" th:value="${order.ordNumber}">立即还车</button>
+
+
+                        <div id="window" class="window_css">
+                        <label>
+                            <textarea class="comm-box" placeholder="请输入评论内容......."></textarea>
+                        </label>
+
+                        <input type="submit" value="评论" class="comm-btn" onclick="saveComments()" id="reply-btn">
+                            <input type="submit" value="取消" onclick="hideWindow()" class="clear-btn">
+                        </div>
+                    </div>
+
+
+            </div>
+
+
+
+
+                <div class="order_pay">
+                    <h3>费用明细</h3>
+                </div>
+                <div class="order_pay_">
+                    <ul>
+                        <li>
+                            <p>车辆租赁费及门店服务费 (原价：<span th:text="${car.carPrice}">246.00元</span>，折扣优惠：0.00元)
+                                <span class="price1">¥<span th:text="${car.carPrice}*${order.ordLease}" >276.00</span></span>
+                            </p>
+                        </li>
+
+                        <li>
+                            <p>其它服务费
+                                <span class="price3">¥<span th:text="${order.ordServiceTip}">20.00</span></span>
+                            </p>
+                        </li>
+                        <li>
+                            <p>手续费
+                                <span class="price4">¥<span >20.00</span></span>
+                            </p>
+                        </li>
+                        <li >
+                            <p>优惠折扣
+                                <tr th:if="${order.ordCouMoney} ne null ">
+                                    <span class="price5">¥-<span th:text="${order.ordCouMoney}" >0.00</span></span>
+                                </tr>
+                                <tr th:if="${order.ordCouMoney} eq null ">
+                                    <span class="price5">¥-<span  >0.00</span></span>
+                                </tr>
+
+                            </p>
+                        </li>
+                        <li>
+                            <h3>总计：<span>￥<span th:text="${order.ordPrice}">396.0</span></span></h3>
+                        </li>
+                        <li>
+                            <h4>已支付：<span>￥<span th:text="${order.ordPrice}">0.0</span></span></h4>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+
+
+    </div>
+</div>
+</div>
+
+
+<script src="../js/order_details.js"></script>
+<script src="../js/common.js"></script>
+<script type="text/javascript">
+    /*当点击调用此方法后,将悬浮窗口显示出来,背景变暗*/
+    function displayWindow() {
+        /*悬浮窗口的显示,需要将display变成block*/
+        document.getElementById("window").style.display = "block";
+        /*将背景变暗*/
+        document.getElementById("shadow").style.display = "block";
+    }
+
+    /*当点击调用此方法,将悬浮窗口和背景全部隐藏*/
+    function hideWindow() {
+        document.getElementById("window").style.display = "none";
+        document.getElementById("shadow").style.display = "none";
+    }
+</script>
+</body>
+</html>

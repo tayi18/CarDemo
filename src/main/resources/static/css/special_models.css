@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.e-day1,.e-day2,.e-day3,.e-day4{
+    width: 50%;
+    height: 350px;
+    float: left;
+
+}
+.e-img{
+    width: 100%;
+    height: 70px;
+    float: left;
+}
+.e-day-fengqiang{
+    margin-left: 20px;
+    margin-top: 20px;
+    border:1px solid #bdb8b8;
+    width: 550px;
+    height: 300px;
+}
+.right-middle{
+
+}
+.fq-car{
+    margin-top: 10px;
+    width: 30%;
+    float: left;
+    margin-left: 12px;
+    border: 1px solid #efefef;
+
+}
+.right-top{
+    width: 100%;
+    height: 65px;
+    float: left;
+    border-bottom: 1px solid #e8e5e5;
+}
+.right-top img{
+    float: left;
+    width: 74%;
+    height: 65px;
+}
+.right-top .refresh{
+    line-height: 65px;
+    float: right;
+    font-size: 13px;
+    width: 15%;
+}
+.right-top .refresh a span{
+    font-size: 13px;
+    float: left;
+}
+.right-top .refresh img{
+    margin-left: 5px;
+    width: 17px;
+    margin-top: 24px;
+    line-height: 65px;
+    height: 17px;
+}
+.right-middle img{
+    width: 168px;
+    height: 130px;
+    float: left;
+}
+.right-under{
+    text-align: center;
+    float: left;
+    width: 100%;
+    height: 40px ;
+}
+.right-under .name{
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    height: 58px;
+    line-height: 58px;
+}
+.right-under .to-buy{
+
+}
+.right-under .price{
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    height: 40px;
+}
+.price .tejia{
+    margin-right: 5px;
+    color: #ffffff;
+    font-size: 13px;
+    margin-left: 35px;
+    float: left;
+    width:64px ;
+    background-color: #4fc6d5;
+    border-radius: 9px;
+}
+.price .price-real{
+    font-size: 16px;
+    float: left;
+}

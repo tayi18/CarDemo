@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>特价</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/special_models.css">
+    <link rel="stylesheet" href="../css/special_models_extral.css">
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <link rel="stylesheet" href="../css/coupno_receive.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../layui/layui.js"></script>
+
+</head>
+<body>
+        <!-- 头部导航 -->
+        <div class="header">
+            <!-- header-top -->
+            <div class="header-top">
+                <div class="middle">
+                    <ul class="right">
+                        <a href="javascript:void(0)">帮助中心</a><span>|</span>
+                        <a href="javascript:void(0)">400-321-2202</a><span>|</span>
+                        <p href="javascript:void()">微信</p>
+                    </ul>
+                    <ul class="left">
+                        <input type="hidden" value="" class="userId">
+                        <a href="../customer/login.html" class="loginAfter">登陆</a><span>|</span>
+                        <a href="../customer/regist.html" class="registAfter">注册</a><span>|</span>
+                        <a href="" class="bye hide">退出</a>
+                        <p class="name" >我的随行</p>
+                    </ul>
+                </div>
+            </div>
+            <!-- header-navigation -->
+            <div class="header-navigation">
+                <div class="middle">
+                    <!-- log -->
+                    <div class="header-img">
+                        <img src="../images/header-logo.png" alt="">
+                    </div>
+                    <div class="header-nav">
+                        <li><a href="../index.html" class="header-word">首页<span></span> </a></li>
+                        <li><a href="../car_rental/car_filter.html"  class="header-word">去租车<span></span></a></li>
+                        <li><a  href="../car_rental/car_select.html"  class="header-word">车型查询<span></span></a></li>
+                        <li><a href="../network/businessoutlets.html"  class="header-word">网点导航<span></span></a></li>
+                        <li><a href="../customer/customer_center.html"  class="header-word">个人中心<span></span></a></li>
+                        <li><a href="../preferential/special_models.html" class="header-word header_active">特价优惠</a><span></span></li>
+                        <li><a href="../customer/mycollect.html" class="header-word">我的收藏</a><span></span></li>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--特惠专区-->
+        <div class="special_models">
+            <div class="middle">
+                <!-- 轮播图 -->
+                <div class="carousel">
+                    <!-- 放置图片内容盒子 -->
+                    <div class="cal-list">
+                        <!-- ul整体 -->
+                        <ul class="viewpage">
+                            <li><img src="../images/special/lunbo1.jpg" alt=""></li>
+                            <li><img src="../images/special/lunbo3.jpg" alt=""></li>
+<!--                            <li><img src="../images/special/lunbo1.jpg" alt=""></li>-->
+<!--                            <li><img src="../images/special/lunbo3.jpg" alt=""></li>-->
+<!--                            <li><img src="../images/special/lunbo1.jpg" alt=""></li>-->
+                            <!--                     给ul添加最后子元素,这个子元素是第一个li-->
+<!--                            <li><img src="../images/bmw3xi.jpg" alt=""></li>-->
+                        </ul>
+                        <!-- 放置左右按钮 -->
+                        <div class="prev">&lt;</div>
+                        <div class="next">&gt;</div>
+                    </div>
+                    <!-- 小圆点 -->
+                    <div class="circle-list">
+                        <span class="circle active"></span>
+                        <span class="circle"></span>
+                        <span class="circle"></span>
+                        <span class="circle"></span>
+                        <span class="circle"></span>
+                    </div>
+                </div>
+
+        <!--    特价专区        -->
+                <div>
+                    <div class="e-img">
+                        <img src="../images/special/everyday.JPG">
+                    </div>
+                    <div class="e-day1">
+                        <div class="e-day-fengqiang recommend">
+                            <div class="right-top">
+                                <img src="../images/special/modular1.png">
+                              <div class="refresh">
+                                  <a href="javascript:void(0)">
+                                  <span>看看别的</span>
+
+
+                                  <img src="../images/special/shuaxing.png">
+                                  </a>
+                              </div>
+
+
+                            </div>
+                            <!--<div class="fq-car">
+                                <div class="right-middle">
+                                    <img src="../images/car_img/car5.png">
+                                </div>
+                                <div class="right-under">
+                                    <a href="javascript:void (0)" class="to-buy">
+                                     <div class="name">焕芬</div>
+
+                                     <div class="price">
+                                         <div class="tejia">
+                                             特价卖
+
+                                         </div>
+                                         <div class="price-real">
+                                             <a>¥</a>
+                                             <a>61</a>
+                                         </div>
+                                     </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="fq-car">
+                                <div class="right-middle">
+                                    <img src="../images/car_img/car4.png">
+                                </div>
+                                <div class="right-under">
+                                    <a href="javascript:void (0)" class="to-buy">
+                                        <div class="name">焕芬</div>
+
+                                        <div class="price">
+                                            <div class="tejia">
+                                                特价卖
+
+                                            </div>
+                                            <div class="price-real">
+                                                <a>¥</a>
+                                                <a>61</a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="fq-car">
+                                <div class="right-middle">
+                                    <img src="../images/car_img/car5.png">
+                                </div>
+                                <div class="right-under">
+                                    <a href="javascript:void (0)" class="to-buy">
+                                        <div class="name">焕芬</div>
+
+                                        <div class="price">
+                                            <div class="tejia">
+                                                特价卖
+
+                                            </div>
+                                            <div class="price-real">
+                                                <a>¥</a>
+                                                <a>61</a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>-->
+
+
+
+                        </div>
+                    </div>
+
+                    <div class="e-day4">
+                        <div class="e-day-fengqiang">
+                            <div class="right-top">
+                                <img src="../images/special/modular4.png">
+                                <div class="refresh">
+                                    <a href="javascript:void(0)">
+                                        <span>看看别的</span>
+
+
+                                        <img src="../images/special/shuaxing.png">
+                                    </a>
+                                </div>
+
+
+                            </div>
+                            <div class="fq-car">
+                                <div class="right-middle">
+                                    <img src="../images/car_img/car5.png">
+                                </div>
+                                <div class="right-under">
+                                    <a href="javascript:void (0)" class="to-buy">
+                                        <div class="name">焕芬</div>
+
+                                        <div class="price">
+                                            <div class="tejia">
+                                                特价卖
+
+                                            </div>
+                                            <div class="price-real">
+                                                <a>¥</a>
+                                                <a>61</a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="fq-car">
+                                <div class="right-middle">
+                                    <img src="../images/car_img/car4.png">
+                                </div>
+                                <div class="right-under">
+                                    <a href="javascript:void (0)" class="to-buy">
+                                        <div class="name">焕芬</div>
+
+                                        <div class="price">
+                                            <div class="tejia">
+                                                特价卖
+
+                                            </div>
+                                            <div class="price-real">
+                                                <a>¥</a>
+                                                <a>61</a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="fq-car">
+                                <div class="right-middle">
+                                    <img src="../images/car_img/car5.png">
+                                </div>
+                                <div class="right-under">
+                                    <a href="javascript:void (0)" class="to-buy">
+                                        <div class="name">焕芬</div>
+
+                                        <div class="price">
+                                            <div class="tejia">
+                                                特价卖
+
+                                            </div>
+                                            <div class="price-real">
+                                                <a>¥</a>
+                                                <a>61</a>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                </div>
+                <!--优惠卷专区-->
+                <div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--优惠卷展示区域-->
+        <div class="special_coupno">
+            <div class="middle">
+                <h3 style="text-align: center; margin-top: 30px">为你推荐好券</h3>
+                <div class="coupno-receive">
+<!--                    <div class="coupno-real">-->
+<!--                        <div class="coupno-left">-->
+<!--                            <div class="coupno-img">-->
+<!--                                <img src="../images/coupno/coupon2.png">-->
+<!--                            </div>-->
+<!--                            <div class="coupno-price">-->
+<!--                                <div class="price">¥100</div>-->
+<!--                                <div class="price-plus">满500可用</div>-->
+<!--                            </div>-->
+<!--                            <div class="coupno-condition">仅限大众品牌汽车可用</div>-->
+<!--                        </div>-->
+<!--                        <div class="coupno-right">-->
+<!--                            <input type="hidden" value="123" class="couId">-->
+<!--                            <a href="javascript:void (0)" id="cou_receive" >立即领取</a>-->
+
+<!--                        </div>-->
+<!--                    </div>-->
+
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 底部导航栏 -->
+        <div class="index-bottom">
+            <div class="middle">
+                <!-- 账户服务 -->
+                <div class="bottom-account">
+                    <ul>
+                        <span>新手指南</span>
+                        <li><a href="javascript:void(0)">注册新用户</a></li>
+                        <li><a href="javascript:void(0)">预定演示</a></li>
+                        <li><a href="javascript:void(0)">取消或者修改订单</a></li>
+                    </ul>
+                    <ul>
+                        <span>租车贴士</span>
+                        <li><a href="javascript:void(0)">支付方式</a></li>
+                        <li><a href="../coupon/coupon_receive.html">领取优惠卷</a></li>
+                        <li><a href="javascript:void(0)">精彩活动</a></li>
+
+                    </ul>
+                    <ul>
+                        <span>售后服务</span>
+                        <li><a href="javascript:void(0)">联系售后</a></li>
+
+                    </ul>
+                    <ul>
+                        <span>会员服务</span>
+                        <li><a href="javascript:void(0)">忘记密码</a></li>
+                        <li><a href="javascript:void(0)">会员充值</a></li>
+                        <li><a href="javascript:void(0)">积分说明</a></li>
+                    </ul>
+                    <ul>
+                        <span>网站帮助</span>
+                        <li><a href="javascript:void(0)">注册新用户</a></li>
+
+                        <li><a href="javascript:void(0)">联系我们</a></li>
+                    </ul>
+                    <ul>
+                    </ul>
+                    <ul>
+                    </ul>
+
+                </div>
+                <!--相关信息-->
+                <div class="connect">
+                    <div class="line-one">
+                        <li><a>关于随行</a></li> <span>｜</span>
+                        <li><a>移动客户端</a></li> <span>｜</span>
+                        <li><a>帮助中心</a></li> <span>｜</span>
+                        <li><a>投诉</a></li> <span>｜</span>
+                        <li><a>联系我们</a></li>
+                    </div>
+                    <div class="line-two">
+                        <a>
+                            Copyright © 2007-2022 苏州随行信息技术服务有限公司  &nbsp;
+                            ICP证：沪B2-20140130沪ICP备08010394号 &nbsp;&nbsp;
+                            违法和不良信息举报：fuzhaohong@1hai.cn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<script src="../js/special_models.js"></script>
+        <script src="../js/special_models_coupno.js"></script>
+        <script src="../js/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>车辆详情</title>
+    <link rel="stylesheet" href="../css/details.css">
+    <script src="../js/details.js"></script>
+    <link rel="stylesheet" href="../css/common.css">
+<!--    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">-->
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../layui/layui.js"></script>
+</head>
+
+<body>
+
+<!--头部导航-->
+<div class="header">
+    <!-- header-top -->
+    <div class="header-top">
+        <div class="middle">
+            <ul class="right">
+                <a href="javascript:void(0)">帮助中心</a><span>|</span>
+                <a href="javascript:void(0)">400-321-2202</a><span>|</span>
+                <p href="javascript:void()">微信</p>
+            </ul>
+            <ul class="left">
+                <a href="../customer/login.html" class="loginAfter">登陆</a><span>|</span>
+                <a href="../customer/regist.html" class="registAfter">注册</a><span>|</span>
+                <a href="" class="bye hide">退出</a>
+                <p class="name" >我的随行</p>
+            </ul>
+        </div>
+    </div>
+    <!-- header-navigation -->
+    <div class="header-navigation">
+        <div class="middle">
+            <!-- log -->
+            <div class="header-img">
+                <img src="../images/header-logo.png" alt="" style="height: 86px;">
+            </div>
+            <div class="header-nav">
+                <li><a href="../index.html" class="header-word">首页</a><span></span></li>
+                <li><a href="../car_rental/car_filter.html"  class="header-word">去租车</a><span></span></li>
+                <li><a href="../car_rental/car_select.html"  class="header-word">车型查询</a><span></span></li>
+                <li><a href="../network/businessoutlets.html"  class="header-word">网点导航</a><span></span></li>
+                <li><a href="../customer/customer_center.html"  class="header-word active">个人中心</a><span></span></li>
+                <li><a href="../preferential/special_models.html" class="header-word">特价优惠</a><span></span></li>
+                <li><a href="../customer/mycollect.html" class="header-word">我的收藏</a><span></span></li>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="w1180">
+    <div class="myshowbox">
+        <div class="myshowbox-container">
+            <a href="javascript:void(0)" class="btn-close"><span></span></a>
+            <div class="div-myshowbox" style="width: 1180px; height: 473px;">
+                <div class="common-modalBox">
+                    <div class="current-carname">
+                        <input type="hidden" th:value="${car.carId}" class="carId">
+                        <input type="hidden" value="" class="collectId">
+                        <h3 th:text="${car.carName}"></h3>
+                    </div>
+                </div>
+                <div class="current-carbox">
+                    <div class="current-carlist">
+                        <div class="current-carinfo">
+
+                            <div class="current-carpic">
+<!--                                <img src="../images/benchic.jpg" alt="">-->
+                                <img th:src="${car.carImg}" alt="">
+                                <span class="video-playbtn video-li" data-cartypeids="421" id="carInfoVideo"></span>
+                            </div>
+                            <p th:text="${car.carName}">   </p><p><span th:text="${car.carPrice}"></span>元/每天起</p>
+                        </div>
+                        <ul class="current-carconfigure clear_float">
+
+                                <li id="li-first-child">
+                                    <p class="configure-name"><span class="configure-icon">
+                                    <img src="../images/details/pinpai.png" alt=""></span></p>
+                                    <p>品牌:<br><span th:text="${car.carBrand}"></span></p>
+                                </li>
+                            <li>
+                                <p class="configure-name"><span class="configure-icon">
+                                    <img src="../images/details/chexing.png" alt=""></span></p>
+                                <p>型号:<br><span th:text="${car.carModel}"></span></p>
+                            </li>
+                                <li>
+                                    <p class="configure-name"><span class="configure-icon">
+                                    <img src="../images/details/biansu.png" alt=""></span></p>
+                                    <p>变速箱:<br><span th:text="${car.carCase}"></span></p>
+                                </li>
+                                <li>
+
+                                    <p class="configure-name"><span class="configure-icon">
+                                        <img src="../images/details/youxiang.png" alt=""></span></p>
+                                    <p>油箱:<br><span th:text="${car.carTank}"></span></p>
+                                </li>
+                                <li>
+                                    <p class="configure-name"><span class="configure-icon"><img src="../images/details/pailiang.png" alt=""></span></p>
+                                    <p>排量:<br><span th:text="${car.carDisp}"></span></p>
+                                </li>
+
+                            <li>
+                                <p class="configure-name"><span class="configure-icon"><img src="../images/details/zuowei.png" alt=""></span></p>
+                                <p>座位数:<br><span th:text="${car.carSeat}"></span></p>
+                            </li>
+                                <li>
+                                    <p class="configure-name"><span class="configure-icon"><img src="../images/details/jinqi.png" alt=""></span></p>
+                                    <p>进气:<br><span th:text="${car.carExhaust}"></span></p>
+                                </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="G-time-choice">
+
+                    <div class="withdraw-select" >
+                        <!-- 地点选择 -->
+                        <div class="withdraw-qick">
+                            <!-- 取车 -->
+                            <li class="left">
+                                <label>取车:</label>
+                                <div>
+                                    <input type="text" value="苏州" class="layui-input area" >
+                                </div>
+                                <div class="showAll" id="showAll" style="display: none;">
+                                    <div class="select">
+                                        <span>请选择还车地点:</span>
+                                        <div class="select-city" id="select-city">
+
+                                        </div>
+                                        <div class="select-area" id="select-area">
+
+                                        </div>
+                                        <div class="select-store" id="select-store">
+
+                                        </div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <input type="text" placeholder="请选择取车门店" class="layui-input in-store">
+                                </div>
+                            </li>
+                            <!-- 还车 -->
+                            <li class="left1">
+                                <label>还车:</label>
+                                <div>
+                                    <input type="text" value="苏州" class="layui-input area1">
+                                </div>
+                                <div class="showAll1" id="showAll1" style="display: none;">
+                                    <div class="select">
+                                        <span>请选择还车地点:</span>
+                                        <div class="select-city1" name="select-city1" id="select-city1">
+
+                                        </div>
+                                        <div class="select-area1" id="select-area1">
+
+                                        </div>
+                                        <div class="select-store1" id="select-store1">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <input type="text" placeholder="请选择还车门店" class="layui-input in-store1">
+                                </div>
+                            </li>
+                        </div>
+                        <!-- 时间选择 -->
+                        <div class="time-select">
+                            <div  class="time-qick" >
+                                <!--  -->
+                                <div class="layui-form">
+                                    <div class="layui-form-item">
+                                        <div class="layui-inline">
+                                            <div class="layui-inline" id="test6">
+                                                <div class="layui-input-inline">
+                                                    <input type="text" autocomplete="off" id="test-startDate-1"  class="layui-input input-start t1" placeholder="开始日期">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="layui-inline">
+                                    <div class="layui-input-inline time">
+                                        <input type="text" class="layui-input t2" id="test-limit3"  placeholder="HH:mm:ss" value="12:00:00">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="time-return" >
+                                <!-- 日期 -->
+                                <div class="layui-form">
+                                    <div class="layui-form-item">
+                                        <div class="layui-inline">
+                                            <div class="layui-inline" id="test6">
+                                                <div class="layui-input-inline">
+                                                    <input type="text" autocomplete="off" id="test-endDate-1" class="layui-input t3" placeholder="结束日期">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 时间 -->
+                                <div class="layui-inline">
+                                    <div class="layui-input-inline time">
+                                        <input type="text" class="layui-input t4" id="test-limit3" placeholder="HH:mm:ss" value="12:00:00">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="msg-car">
+                    <p>取车地点：<span th:text="${bussiness.busAddress}"></span></p>
+                    <p>网点电话：<span th:text="${bussiness.busTel}"></span></p>
+                </div>
+
+                <div class="container">
+
+                    <button type="button" class="btn btn-default" id="btn_collect" style="border: 0">
+                        <img alt="" src="../images/collect/collect.png" class="collect_img" id="btn_collect_icon"><span class="collect_sucess_text">收藏吧！</span>
+                    </button>
+                    <form method="post" action="/dropOrder1">
+                        <input type="submit" id="to_order" onmouseenter="btn()"  value="立即购买">
+                        <input type="hidden" id="start" name="start" value="">
+                        <input type="hidden" id="end" name="end" value="">
+                        <input type="hidden" id="carId1" name="carId1" value="">
+                    </form>
+
+
+                </div>
+                <div>
+                <div class="current-carintro">
+                    <h3>车辆颜色说明</h3>
+                    <p>车辆颜色请以门店为准，图片仅为车型示意图。</p>
+                </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="car-comment">
+            <h3>车辆评价</h3>
+        </div>
+        <div class="comment-box" style="margin-top: 10px">
+<!--            <h3 style="cursor: pointer ;margin-top: 20px;border-top: 1px solid gray" class="comment-title">显示评论</h3>-->
+<!--            <div style="display: none;margin-top: 10px" class="replay-show-hiden">-->
+            <ul class="comment-ul">
+                <li class="comment-li" th:each="comment:${commentList}">
+                    <div class="comment-customer">
+                        <div class="a-link">
+                            <h5 class="customer-name" th:text="${comment.commentUser.userPetname}">LiHua</h5>
+                            <span class="type-text" th:text="${comment.comment.commContent}">车子很干净，ce车子很干净，车子很干净，nice，车子很干净，nice车子很干净，nice车子很干净，nice车子很干净，nice车子很干净，车子很干净，nice，车子很干净，nice车子很干净，nice车子很干净，nice车子很干净，nice车子很干净，nice车子很干净，nice车子很干净，车子很干净，nice，车子很干净，nice车子很干净，nice车子很干净，nice车子很干净，nice车子很干净，nice车子很干净，nice车子很干净，车子很干净，nice，车子很干净，nice车子很干净，nice车子很干净，nice车子很干净，nice车子很干净，nice车子很干净，nice车车子很干净，车子很干净，nice，车子很干净，子很干净净，nice车子很干净，nice车子很干净，nice车子很干净，车子很干净，nice，车子很干净，nice车子很干净，nice车子很干净，nice车子很干净，nice车子很干净，nice车子很干净，nice车子很干净，车子很干净，nice，车子很干净，nice车子很干净，nice车子很干净，nice车子很干净，nice车子很干净，nice车子很干净，nice车子很干净，nice车子很干净，nice车子很干净，nice车子很干净，nice</span>
+                            <div class="comment-handle">
+                                <span class="evaluate-time" th:text="${comment.comment.commTime}">2021/9/3 12:20:33</span>
+                                <a class="replay-handle" href="javascript:(0)"  th:id="'comment'+${comment.comment.commId} " onclick="displayWindow()">回复</a>
+                                <!--悬浮窗口-->
+                                <div id="window" class="window_css">
+<!--                                    <label>-->
+<!--                                        <input type="text" class="reply-box" placeholder="请输入回复内容.....">-->
+<!--                                    </label>-->
+                                    <label>
+                                        <textarea class="reply-box" placeholder="请输入回复内容......."></textarea>
+                                    </label>
+
+                                    <input type="submit" value="回复" class="reply-btn" id="reply-btn">
+                                    <input type="submit" value="取消" onclick="hideWindow()" class="clear-btn">
+                                </div>
+                                <span>|</span>
+                                <span th:if="${comment.commentStatus} le 0 ">
+                                    <a href="javascript:(0)">
+                                        <span class="like" th:id="${comment.comment.commId}"></span>
+                                    </a>
+                                    <span  th:class="'like-comment'+${comment.comment.commId}" th:text="${comment.commentLikeCount}"></span>
+                                </span>
+                                <span th:if="${comment.commentStatus} eq 1 ">
+                                    <a href="javascript:(0)">
+                                        <span class="haslike" th:id="${comment.comment.commId}"></span>
+                                    </a>
+                                    <span  th:class="'like-comment'+${comment.comment.commId} " th:text="${comment.commentLikeCount}"></span>
+                                </span>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <ul class="replay-ul">
+                        <li th:each="reply:${comment.reply}">
+                            <div class="replay-customer">
+                                <h6 class="replay-customer-name" th:text="${reply.replyUser.userPetname}">Smith</h6>
+                                <span class="replay-text" th:text="${reply.reply.replyContent}">这么好！我也租几辆玩玩。这么好！我也租几辆玩玩。这么好！我也租几辆玩玩。这么好！我也租几辆玩玩。这么好！我也租几辆玩玩。这么好！我也租几辆玩玩。这么好！我也租几辆玩玩。这么好！我也租几辆玩玩。这么好！我也租几辆玩玩。这么好！我也租几辆玩玩。这么好！我也租几辆玩玩。这么好！我也租几辆玩玩。这么好！我也租几辆玩玩。这么好！我也租几辆玩玩。这么好！我也租几辆玩玩。这么好！我也租几辆玩玩。这么好！我也租几辆玩玩。这么好！我也租几辆玩玩。这么好！我也租几辆玩玩。这么好！我也租几辆玩玩。这么好！我也租几辆玩玩。这么好！我也租几辆玩玩。这么好！我也租几辆玩玩。这么好！我也租几辆玩玩。这么好！我也租几辆玩玩。这么好！我也租几辆玩玩。</span>
+                                <span class="replay-time" th:text="${reply.reply.replyTime}">2021-9-9 10:20:11</span>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+<script src="../js/details.js"></script>
+<script src="../js/details_time.js"></script>
+<script src="../layui/layui.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/collect.js"></script>
+<script src="../js/like.js"></script>
+<script type="text/javascript">
+    /*当点击调用此方法后,将悬浮窗口显示出来,背景变暗*/
+    function displayWindow() {
+        /*悬浮窗口的显示,需要将display变成block*/
+        document.getElementById("window").style.display = "block";
+        /*将背景变暗*/
+        document.getElementById("shadow").style.display = "block";
+    }
+
+    /*当点击调用此方法,将悬浮窗口和背景全部隐藏*/
+    function hideWindow() {
+        document.getElementById("window").style.display = "none";
+        document.getElementById("shadow").style.display = "none";
+    }
+
+
+    $(".replay-handle").click(function (event){
+        var ele = event.target;
+        var commEle= ele.id;
+        var commEleLenght = commEle.length;
+        // console.log(commEle)
+        var commId = commEle.substring(commEleLenght-1);
+        var replyTime = new Date();
+
+        console.log("commId1:"+commId)
+        var userId = $(".userId").val();
+        console.log(userId)
+
+        // function getUserId(){
+        //     var token = localStorage.getItem("token");
+        //     console.log(token)
+        //     $.ajax({
+        //         type: "get",
+        //         url: "/getUserId/",
+        //         async:false,
+        //         headers:{'token':token},
+        //         success:
+        //     })
+        // }
+        $(".reply-btn").click(function (){
+            saveReply()
+        })
+        function saveReply(){
+            var replyContent = $(".reply-box").val()
+            console.log("commId2:"+commId)
+            $.ajax({
+                type:"post",
+                url:"/savaReply/",
+                data:{
+                    commId: commId,
+                    userId: userId,
+                    replyContent : replyContent
+
+                },
+                success: function (replyResponse){
+                    if (replyResponse.resultcode ==200){
+                        alert("回复成功")
+                        location.reload();
+                    }
+                }
+            })
+        }
+    })
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

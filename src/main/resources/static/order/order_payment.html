@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>付款</title>
+    <link rel="stylesheet" href="../css/order_payment.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <link rel="stylesheet" href="../css/common.css">
+</head>
+<body>
+<!-- 头部导航 -->
+<div class="header">
+    <!-- header-top -->
+    <div class="header-top">
+        <div class="middle">
+            <ul class="right">
+                <a href="javascript:void(0)">帮助中心</a><span>|</span>
+                <a href="javascript:void(0)">400-321-2202</a><span>|</span>
+                <p href="javascript:void()">微信</p>
+            </ul>
+            <ul class="left">
+                <a href="../customer/login.html" class="loginAfter">登陆</a><span>|</span>
+                <a href="../customer/regist.html" class="registAfter">注册</a><span>|</span>
+                <a href="" class="bye hide">退出</a>
+                <p class="name" >我的随行</p>
+            </ul>
+        </div>
+    </div>
+    <!-- header-navigation -->
+    <div class="header-navigation">
+        <div class="middle">
+            <!-- log -->
+            <div class="header-img">
+                <img src="../images/header-logo.png" alt="">
+            </div>
+            <div class="header-nav">
+                <li><a href="../index.html" class="header-word active">首页<span></span> </a></li>
+                <li><a href="../car_rental/car_filter.html"  class="header-word">去租车<span></span></a></li>
+                <li><a  href="../car_rental/car_select.html"  class="header-word">车型查询<span></span></a></li>
+                <li><a href="../network/businessoutlets.html"  class="header-word">网点导航<span></span></a></li>
+                <li><a href="../customer/customer_center.html"  class="header-word">个人中心<span></span></a></li>
+                <li><a href="../preferential/special_models.html" class="header-word">特价优惠<span></span></a></li>
+                <li><a href="../customer/mycollect.html" class="header-word">我的收藏<span class="myshoucang"></span></a></li>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="word">
+    <h1>支付成功</h1>
+    <p>订单编号：
+        <span class="orderNum" th:text="${out_trade_no}"></span>
+    </p>
+    <p>支付宝交易号：
+        <span class="flowNum" th:text="${trade_no}"></span>
+
+    </p>
+    <p>实付金额：<span class="payPrice" th:text="${total_amount}"></span></p>
+    <p>下单车辆：<span class="carName" th:text="${carName}"></span></p>
+
+    <form method="post" action="/orderStatus">
+        <input name="ordNumber" th:value="*{out_trade_no}" type="hidden">
+    </form>
+
+
+
+
+</div>
+
+<script src="../js/common.js"></script>
+
+
+</body >
+</html>

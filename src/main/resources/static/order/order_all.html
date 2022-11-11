@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>订单详情</title>
+    <link rel="stylesheet" href="../css/order_all.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/customer_center.css">
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../layui/layui.js"></script>
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+<!-- 头部导航 -->
+<div class="header">
+    <!-- header-top -->
+    <div class="header-top">
+        <div class="middle">
+            <ul class="right">
+                <a href="javascript:void(0)">帮助中心</a><span>|</span>
+                <a href="javascript:void(0)">400-321-2202</a><span>|</span>
+                <p href="javascript:void()">微信</p>
+            </ul>
+            <ul class="left">
+                <a href="../customer/login.html" class="loginAfter">登陆</a><span>|</span>
+                <a href="../customer/regist.html" class="registAfter">注册</a><span>|</span>
+                <a href="" class="bye hide">退出</a>
+                <p class="name" >我的随行</p>
+            </ul>
+        </div>
+    </div>
+    <!-- header-navigation -->
+    <div class="header-navigation">
+        <div class="middle">
+            <!-- log -->
+            <div class="header-img">
+                <img src="../images/header-logo.PNG" alt="">
+            </div>
+            <div class="header-nav">
+                <li><a href="../index.html" class="header-word">首页</a><span></span></li>
+                <li><a href="../car_rental/car_filter.html"  class="header-word">去租车</a><span></span></li>
+                <li><a  href="../car_rental/car_select.html"  class="header-word">车型查询</a><span></span></li>
+                <li><a href="../network/businessoutlets.html"  class="header-word">网点导航</a><span></span></li>
+                <li><a href="../customer/customer_center.html"  class="header-word">个人中心</a><span></span></li>
+                <li><a href="../preferential/special_models.html" class="header-word">特价优惠</a><span></span></li>
+                <li><a href="../customer/mycollect.html" class="header-word">我的收藏</a><span></span></li>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--个人中心 main-->
+<div id="content">
+    <div class="content-bd">
+
+
+        <!--左侧导航-->
+        <div class="con-left">
+            <div class="sub-nav">
+                <dt>个人中心</dt>
+                <dd>
+                    <a class="ck cc-change" id="exchange-info1">用户信息</a>
+                </dd>
+                <dd>
+                    <a class="cc-change" id="exchange-info2">修改信息</a>
+                </dd>
+                <dd>
+                    <a class="cc-change" id="exchange-info3">修改密码</a>
+                </dd>
+                <dt>我的资产</dt>
+                <dd>
+                    <a class="cc-change">我的优惠券</a>
+                </dd>
+                <dd>
+                    <a class="cc-change">订单管理</a>
+                </dd>
+            </div>
+        </div>
+
+        <!--右侧内容-->
+        <div class="col-main">
+            <!--订单信息-->
+            <div class="information" id="info5">
+                <ul class="nav nav-tabs" id="myTab">
+                    <li class="active" style="font-weight: bolder"><a href="#d1" data-toggle="tab">全部订单</a></li>
+                    <li style="font-weight: bolder"><a href="#d2"  data-toggle="tab">预约中</a></li>
+                    <li style="font-weight: bolder"><a href="#d3"  data-toggle="tab">租凭中</a></li>
+                    <li style="font-weight: bolder"><a href="#d4"  data-toggle="tab">已完成</a></li>
+                    <li style="font-weight: bolder"><a href="#d5"  data-toggle="tab">已取消</a></li>
+                </ul>
+
+
+
+                <div class="tab-content information-index">
+                    <div id="d1" class="tab-pane active">
+                        <table >
+                            <tr class="row1">
+                                <td>订单编号</td>
+                                <td>车型</td>
+                                <td>取车时间</td>
+                                <td>还车时间</td>
+                                <td>订单状态</td>
+                            </tr>
+                            <tr>
+                                <td><a href="order_details.html">1234567891</a></td>
+                                <td>本田凌派/三厢 /自动 /1.0T</td>
+                                <td>2022/9/4 9:00:00</td>
+                                <td>2022/9/6 9:00:00</td>
+                                <td>已取消</td>
+                            </tr>
+                            <tr>
+                                <td><a href="order_details.html">1234567891</a></td>
+                                <td>本田凌派/三厢 /自动 /1.0T</td>
+                                <td>2022/9/4 9:00:00</td>
+                                <td>2022/9/6 9:00:00</td>
+                                <td>已取消</td>
+                            </tr>
+                            <tr>
+                                <td><a href="order_details.html">1234567891</a></td>
+                                <td>本田凌派/三厢 /自动 /1.0T</td>
+                                <td>2022/9/4 9:00:00</td>
+                                <td>2022/9/6 9:00:00</td>
+                                <td>已取消</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div id="d2"  class="tab-pane" >
+                        您还没有订单，现在就去订车吧！
+                    </div>
+                    <div id="d3"  class="tab-pane" >
+                        您还没有订单，现在就去订车吧！
+                    </div>
+                    <div id="d4"  class="tab-pane" >
+                        您还没有订单，现在就去订车吧！
+                    </div>
+                    <div id="d5"  class="tab-pane" >
+                        您还没有订单，现在就去订车吧！
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('#myTab a:last').tab('show');
+    })
+    $('#myTab a').click(function (e) {
+        e.preventDefault();
+        $(this).tab('show');
+    })
+</script>
+
+<script src="../js/customer_center.js"></script>
+<script src="../js/common.js"></script>
+
+
+</body>
+</html>

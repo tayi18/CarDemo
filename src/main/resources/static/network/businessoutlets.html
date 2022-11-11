@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>营业网点</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/businessoutlets.css">
+    <link rel="stylesheet" href="../css/map_information.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<!-- 头部导航 -->
+<div class="header">
+    <!-- header-top -->
+    <div class="header-top">
+        <div class="middle">
+            <ul class="right">
+                <a href="javascript:void(0)">帮助中心</a><span>|</span>
+                <a href="javascript:void(0)">400-321-2202</a><span>|</span>
+                <p href="javascript:void()">微信</p>
+            </ul>
+            <ul class="left">
+                <a href="../customer/login.html" class="loginAfter">登陆</a><span>|</span>
+                <a href="../customer/regist.html" class="registAfter">注册</a><span>|</span>
+                <a href="" class="bye hide">退出</a>
+                <p class="name" >我的随行</p>
+            </ul>
+        </div>
+    </div>
+    <!-- header-navigation -->
+    <div class="header-navigation">
+        <div class="middle">
+            <!-- log -->
+            <div class="header-img">
+                <img src="../images/header-logo.PNG" alt="" style="height: 86px;">
+            </div>
+            <div class="header-nav">
+                <li><a href="../index.html" class="header-word">首页</a><span></span></li>
+                <li><a href="../car_rental/car_filter.html"  class="header-word">去租车</a><span></span></li>
+                <li><a href="../car_rental/car_select.html"  class="header-word">车型查询</a><span></span></li>
+                <li><a href="../network/businessoutlets.html"  class="header-word header_active">网点导航</a><span></span></li>
+                <li><a href="../customer/customer_center.html"  class="header-word">个人中心</a><span></span></li>
+                <li><a href="../preferential/special_models.html" class="header-word">特价优惠</a><span></span></li>
+                <li><a href="../customer/mycollect.html" class="header-word">我的收藏</a><span></span></li>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- main -->
+<div class="business">
+    <!--地区-->
+    <div class="citybox-display">
+        <div class="new-city-box">
+            <p>苏州租车</p>
+        </div>
+        <div class="area-box">
+            <input name="ctl00$mainContent$lblDistrict" type="hidden" id="lblDistrict" readonly="readonly" value="机场/车站" />
+        </div>
+        <div class="new-area-wrap">
+            <div class="new-area-box">
+                <a href="javascript:void(0)" class="area">机场/车站</a>
+                <a href="javascript:void(0)" class="area">姑苏区</a>
+                <a href="javascript:void(0)" class="area">园区</a>
+                <a href="javascript:void(0)" class="area">新区</a>
+                <a href="javascript:void(0)" class="area">吴中区</a>
+                <a href="javascript:void(0)" class="area">相城区</a>
+                <a href="javascript:void(0)" class="area">吴江区</a>
+                <a href="javascript:void(0)" class="area">虎丘区</a>
+                <a href="javascript:void(0)" class="area">高新区</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 地图 -->
+    <div class="business-main-box">
+        <!--left-->
+        <div class="business-main-box-left" style="height: 580px;">
+
+            <!--<div class="store-box" onclick="infowindow1.open(map,[120.585467, 31.317761])">
+                <ul>
+                    <li class="store-nummark">1</li>
+                    <li class="store-name">
+                        寒山寺店
+&lt;!&ndash;                        <em class="store-tips"></em>&ndash;&gt;
+                    </li>
+                    <li class="store-address">
+                        苏州市姑苏区和园路197号102室
+                        <span></span>
+                    </li>
+                    <li class="store-phone">
+                        门店电话：<span> 18013116796</span>
+                    </li>
+                    <li class="store-time">
+                        营业时间：<span>8:00-20:00</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="store-box" onclick="infowindow2.open(map,[120.562363,31.288968])">
+                <ul>
+                    <li class="store-nummark">2</li>
+                    <li class="store-name">
+                        水上乐园送车点
+                        &lt;!&ndash;                        <em class="store-tips"></em>&ndash;&gt;
+                    </li>
+                    <li class="store-address">
+                        苏州市姑苏区和园路197号102室
+                        <span></span>
+                    </li>
+                    <li class="store-phone">
+                        门店电话：<span> 18013116796</span>
+                    </li>
+                    <li class="store-time">
+                        营业时间：<span>8:00-20:00</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="store-box" onclick="infowindow3.open(map,[120.585467, 31.307761])">
+                <ul>
+                    <li class="store-nummark">3</li>
+                    <li class="store-name">
+                        东兴路便捷点
+                        &lt;!&ndash;                        <em class="store-tips"></em>&ndash;&gt;
+                    </li>
+                    <li class="store-address">
+                        苏州市姑苏区和园路197号102室
+                        <span></span>
+                    </li>
+                    <li class="store-phone">
+                        门店电话：<span> 18013116796</span>
+                    </li>
+                    <li class="store-time">
+                        营业时间：<span>8:00-20:00</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="store-box">
+                <ul>
+                    <li class="store-nummark">4</li>
+                    <li class="store-name">
+                        寒山寺店
+                        &lt;!&ndash;                        <em class="store-tips"></em>&ndash;&gt;
+                    </li>
+                    <li class="store-address">
+                        苏州市姑苏区和园路197号102室
+                        <span></span>
+                    </li>
+                    <li class="store-phone">
+                        门店电话：<span> 18013116796</span>
+                    </li>
+                    <li class="store-time">
+                        营业时间：<span>8:00-20:00</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="store-box">
+                <ul>
+                    <li class="store-nummark">5</li>
+                    <li class="store-name">
+                        寒山寺店
+                        &lt;!&ndash;                        <em class="store-tips"></em>&ndash;&gt;
+                    </li>
+                    <li class="store-address">
+                        苏州市姑苏区和园路197号102室
+                        <span></span>
+                    </li>
+                    <li class="store-phone">
+                        门店电话：<span> 18013116796</span>
+                    </li>
+                    <li class="store-time">
+                        营业时间：<span>8:00-20:00</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="store-box">
+                <ul>
+                    <li class="store-nummark">6</li>
+                    <li class="store-name">
+                        寒山寺店
+                        &lt;!&ndash;                        <em class="store-tips"></em>&ndash;&gt;
+                    </li>
+                    <li class="store-address">
+                        苏州市姑苏区和园路197号102室
+                        <span></span>
+                    </li>
+                    <li class="store-phone">
+                        门店电话：<span> 18013116796</span>
+                    </li>
+                    <li class="store-time">
+                        营业时间：<span>8:00-20:00</span>
+                    </li>
+                </ul>
+            </div>-->
+
+        </div>
+        <!--right-->
+        <div class="business-main-box-right">
+            <div id="EhiMap" style="width: 100%; -webkit-transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out;height: 560px">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.15&key=c329c0cfa9d945232b82ccb74441adfb&plugin=AMap.AdvancedInfoWindow"></script>
+<!--<script type="text/javascript" src="https://restapi.amap.com/v3/place/around?key=128ae491e71d614bd4f91b1d0b56a6da&location=116.473168,39.993015&radius=10000&types=011100
+"></script>-->
+<script type="text/javascript" src="../js/map.js"></script>
+<script type="text/javascript" src="../js/bussiness.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+</body>
+</html>

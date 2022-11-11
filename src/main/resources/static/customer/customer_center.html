@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/customer_center.css">
+    <link rel="stylesheet" href="../css/order_details.css">
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <link rel="stylesheet" href="../css/preferential.css">
+    <link rel="stylesheet" href="../css/order_all.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../layui/layui.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+
+
+</head>
+<body>
+<!-- 头部导航 -->
+<div class="header">
+    <!-- header-top -->
+    <div class="header-top">
+        <div class="middle">
+            <ul class="right">
+                <a href="javascript:void(0)">帮助中心</a><span>|</span>
+                <a href="javascript:void(0)">400-321-2202</a><span>|</span>
+                <p href="javascript:void()">微信</p>
+            </ul>
+            <ul class="left">
+                <a href="../customer/login.html" class="loginAfter">登陆</a><span>|</span>
+                <a href="../customer/regist.html" class="registAfter">注册</a><span>|</span>
+                <a href="" class="bye hide">退出</a>
+                <p class="name" >我的随行</p>
+            </ul>
+        </div>
+    </div>
+    <!-- header-navigation -->
+    <div class="header-navigation">
+        <div class="middle">
+            <!-- log -->
+            <div class="header-img">
+                <img src="../images/header-logo.PNG" alt="" style="height: 86px;">
+            </div>
+            <div class="header-nav">
+                <li><a href="../index.html" class="header-word">首页</a><span></span></li>
+                <li><a href="../car_rental/car_filter.html"  class="header-word">去租车</a><span></span></li>
+                <li><a href="../car_rental/car_select.html"  class="header-word">车型查询</a><span></span></li>
+                <li><a href="../network/businessoutlets.html"  class="header-word">网点导航</a><span></span></li>
+                <li><a href="../customer/customer_center.html"  class="header-word header_active">个人中心</a><span></span></li>
+                <li><a href="../preferential/special_models.html" class="header-word">特价优惠</a><span></span></li>
+                <li><a href="../customer/mycollect.html" class="header-word ">我的收藏</a><span></span></li>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--个人中心 main-->
+<div id="content">
+    <div class="content-bd">
+
+
+       <!--左侧导航-->
+        <div class="con-left">
+            <div class="sub-nav">
+                <dt id="exchange1">个人中心</dt>
+                <dd>
+                    <a class="ck cc-change" id="exchange-info1">用户信息</a>
+                </dd>
+                <dd>
+                    <a class="cc-change" id="exchange-info2">修改密码</a>
+                </dd>
+                <dd>
+                    <a class="cc-change" id="exchange-info3">修改信息</a>
+                </dd>
+                <dd>
+                    <a class="cc-change" id="exchange-info6">消息通知</a>
+                </dd>
+                <dt id="exchange2">我的资产</dt>
+                <dd>
+                    <a class="cc-change" id="exchange-info4">我的优惠券</a>
+                </dd>
+                <dd>
+                    <a class="cc-change" id="exchange-info5">订单管理</a>
+                </dd>
+            </div>
+        </div>
+
+        <!--右侧内容-->
+        <div class="col-main">
+            <!--用户信息-->
+            <div class="information" id="info1">
+                <!--<h2>用户信息</h2>
+                <div class="mod information-index">
+                    <div class="ui-bfc information-index-panel">
+                        &lt;!&ndash;头像暂定&ndash;&gt;
+                        <div class="ui-bfc-hd hd">
+                            <img src="../images/customer_photo.png" width="99" height="99">
+                        </div>
+                        &lt;!&ndash; 个人信息&ndash;&gt;
+                        <div class="ui-bfc-bd bd">
+                            <table width="100%">
+                                <tbody>
+                                <tr>
+                                    <td class="cell-title">用户名：</td>
+                                    <td>
+                                        <p>穿靴子的猫</p>
+                                    </td>
+                                </tr>
+                                    <tr>
+                                        <td class="cell-title">电子邮箱：</td>
+                                        <td>
+                                            <p>448619713@qq.com</p>
+                                            <span class="gray">(未验证)</span>
+                                            <a class="update-info">修改</a>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td class="cell-title">手机号码：</td>
+                                        <td>
+                                            <p>18816291187</p>
+                                            <span class="gray">(未验证)</span>
+                                            <a class="update-info">修改</a>
+                                        </td>
+                                    </tr>
+                                <tr>
+                                    <td class="cell-title">身份证：</td>
+                                    <td>
+                                        <p></p>
+                                        <span class="gray">(未验证)</span>
+                                        <a class="update-info">立即认证</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="cell-title">真实姓名：</td>
+                                    <td>
+                                        <p>***</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="cell-title">生日：</td>
+                                    <td>
+                                        <p> </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="cell-title">性别：</td>
+                                    <td>
+                                        <p> </p>
+                                    </td>
+                                </tr>
+                                    &lt;!&ndash;<tr>
+                                        <td colspan="2">
+                                            <div class="dashed-border"></div>
+                                        </td>
+                                    </tr>&ndash;&gt;
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="operate-panel">
+                        <a class="ui-btn ui-btn-white-l update-info">修改信息</a>
+                    </div>
+
+                </div>-->
+            </div>
+
+            <!--修改密码-->
+            <div class="information hide" id="info2">
+                <h2>修改密码</h2>
+                <div class="mod information-changepassword">
+                    <form id="myForm" method="post">
+                        <!--<input type="hidden" name="_method" value="PUT">
+                        <input type="hidden" value="" class="userId" name="userId" ><br>-->
+                        <table width="100%">
+                            <tr>
+                                <td class="cell-title" width="35%">原密码：</td>
+                                <td width="65%" style="position:relative">
+                                    <input data-val="true" data-val-required="请输入原始密码" id="userPsd" maxlength="18" name="OldPassword"  placeholder="请输入原密码" type="password" value=""/>
+                                    <em></em><span></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="cell-title">新密码：</td>
+                                <td style="position:relative">
+                                    <input data-disable-default="True" data-val="true" data-val-required="请输入新密码" id="NewPassword" maxlength="18" name="NewPassword"  placeholder="密码需6到18位，且要包含大小写字母及数字" type="password" />
+                                    <em class="NewPasswordwordTip">*</em><span></span>
+                                    <div class="pwd-prompt"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="cell-title">确认密码：</td>
+                                <td style="position:relative">
+                                    <input id="Psdword" type="hidden" value="">
+                                    <input data-val="true" data-val-equalto="“确认密码”和“新密码”不匹配。" data-val-equalto-other="*.NewPassword" data-val-required="请输入确认密码" id="ConfirmPassword" maxlength="18" name="userPsd" onKeypress="javascript:if(event.keyCode == 32)event.returnValue = false;" placeholder="请再次输入新密码" type="password"  value=""/>
+                                    <em class="ConfirmPasswordwordTip">*</em><span></span>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="cell-title"></td>
+                                <td>
+                                    <div class="operate-panel">
+                                        <a id="btnSubmit" class="ui-btn ui-btn-orange-l" href="javascript:void(0)">确认修改</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+
+            </div>
+
+            <!--修改信息-->
+            <div class="information  hide" id="info3">
+                <h2>修改信息</h2>
+                <div class="mod information-changeuser">
+                    <form id="myinfo" method="post">
+                        <input type="hidden" name="_method" value="PUT">
+                        <table width="100%">
+                            <tbody>
+                            <input type="hidden" value="" class="userId" name="userId"><br>
+                            <tr>
+                                <td class="cell-title" width="35%">用户名：</td>
+                                <td style="position:relative">
+                                    <input type="text" class="userPetname" name="userPetname" id="userPetname" value=""/>
+                                    <em></em>
+                                    <span class="userPetnameTip msgTip"></span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="cell-title" width="35%">手机号：</td>
+                                <td style="position:relative">
+                                    <input type="text" class="usertel" name="userTel" id="userTel" value=""/>
+                                    <em></em>
+                                    <span class="useretelTip msgTip"></span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="cell-title" width="35%">邮箱：</td>
+                                <td style="position:relative">
+                                    <input type="text" class="useremail" name="userEmail" id="userEmail" value=""/>
+                                    <em></em>
+                                    <span class="useremailTip msgTip"></span>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="cell-title" width="35%">真实姓名：</td>
+                                <td style="position:relative">
+                                    <input type="text" class="usernamezx" name="userName" id="userName" value=""/>
+                                    <em></em>
+                                    <span></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="cell-title" width="35%">身份证号码：</td>
+                                <td style="position:relative">
+                                    <input type="text" class="useridcardIpt" name="userIdcard" id="userIdcard" value=""/>
+                                    <em></em>
+                                    <span class="userIdcardTip msgTip" ></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="cell-title" width="35%">性别：</td>
+                                <td style="position:relative">
+                                    <input type="radio" name="gender" value="M" checked class="gerderBtn"><label class="gerderTip">男性</label>
+                                    <input type="radio" name="gender" value="F" class="gerderBtn"><label class="gerderTip">女性</label>
+                                    <em></em>
+                                    <span></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="cell-title" width="35%">出生日期：</td>
+                                <td style="position:relative">
+                                    <input type="date" class="userdate" id="userBir" name="userBir1" value=""/>
+                                    <em></em>
+                                    <span></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="cell-title"></td>
+                                <td>
+                                    <div class="operate-panel">
+                                        <a id="Submit" class="ui-btn ui-btn-orange-l" href="javascript:void(0)">保存修改</a>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </form>
+                </div>
+            </div>
+
+            <!--我的优惠券-->
+            <div class="information  hide" id="info4">
+                <div class="preferential">
+                    <!--    头部-->
+                    <div class="preferential-head">
+                        <h4>我的优惠编码</h4>
+                    </div>
+                    <!--    绑定优惠码-->
+                    <div class="coupon-bind">
+                        <p class="coupon-bind-tips">在此输入您的优惠编码，点击“绑定”后，
+                            此优惠编码将自动绑定您的一嗨账户。下次租车时可选择优惠编码抵用租金。</p>
+                        <div class="coupon-bind-panel">
+                            <h3>优惠编码：</h3>
+                            <input id="textPromotionCode" type="text" placeholder="请输入您的优惠编码" maxlength="10">
+                            <i style="color: #ff0000;font-style: normal;display: inline-block;padding-right: 10px;">*</i>
+                            <a id="btnBind" class="ui-btn ui-btn-orange-l" href="">绑定</a>
+                        </div>
+                    </div>
+                    <div class="hd">
+                        <i>自驾优惠</i>
+                    </div>
+                    <div id="divPromotions" class="mod coupon-list">
+                        <table class="ui-table-list" width="100%">
+                            <tbody class="coupon-text">
+                            <tr>
+                                <th width="30%" class="row-first-cell">优惠券编号</th>
+                                <th width="15%">到期时间</th>
+                                <th width="15%">使用状态</th>
+                                <th width="15%">使用规则</th>
+                            </tr>
+
+                            <!--我的优惠券显示在这-->
+
+                            </tbody>
+                        </table>
+
+                        <div class="ui-page">
+                            <div class="pages">
+                                <a href="javascript:void(0)" class="on" data-page-index="1">1</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade " id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="../images/btn-myshow-close.png"></button>
+                                <h4 class="modal-title" id="myModalLabel"></h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="alert-rulebox">
+                                    <h3>使用规则：</h3>
+                                    <ol class="alert-rulebox-rules">
+                                        <li>
+                                            "1、自绑定日起2个月有效，租期满足2天及以上，租期包含任意法定节假日（含公休及调休）及前一天不能使用；<br>
+                                            2、适用于经济或舒适车型，仅限非首次取车订单可用，仅减免订单中最低一日的车辆租赁费及门店服务费，最高可减200元，其他费用正常收取；<br>
+                                            3、不可与一嗨其他优惠共享，不可重复使用，仅限一嗨国内自驾业务使用；<br>
+                                            4、奖品仅限本人使用，不可转让。"
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="../index.html" class="common-orgbtn rule-btn">立即使用</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!--订单信息-->
+            <div class="information hide" id="info5">
+                <ul class="nav nav-tabs" id="myTab">
+                    <!--<li class="active" style="font-weight: bolder"><a href="#d1" data-toggle="tab">全部订单</a></li>-->
+                    <!--<li style="font-weight: bolder"><a href="#d2"  data-toggle="tab">预约中</a></li>
+                    <li style="font-weight: bolder"><a href="#d3"  data-toggle="tab">租凭中</a></li>
+                    <li style="font-weight: bolder"><a href="#d4"  data-toggle="tab">已完成</a></li>
+                    <li style="font-weight: bolder"><a href="#d5"  data-toggle="tab">已取消</a></li>-->
+                </ul>
+
+                <div class="tab-content information-index">
+                    <div id="d1" class="tab-pane active">
+                        <table class="order-text1">
+                            <tr class="row1">
+                                <td>订单编号</td>
+                                <td>车型</td>
+                                <td>取车时间</td>
+                                <td>还车时间</td>
+                                <td>订单状态</td>
+                            </tr>
+
+
+                            <!--我的订单显示位置-->
+
+                        </table>
+                    </div>
+                    <!--<div id="d2"  class="tab-pane" >
+                        您还没有订单，现在就去订车吧！
+                    </div>
+                    <div id="d3"  class="tab-pane" >
+                        您还没有订单，现在就去订车吧！
+                    </div>
+                    <div id="d4"  class="tab-pane" >
+                        您还没有订单，现在就去订车吧！
+                    </div>
+                    <div id="d5"  class="tab-pane" >
+                        您还没有订单，现在就去订车吧！
+                    </div>-->
+
+                </div>
+            </div>
+            <!--用户信息-->
+            <div class="information hide" id="info6">
+                <div class="personal-msg">
+                    <a>消息通知</a>
+                </div>
+<!--                消息一-->
+                <div class="personal-prent">
+                    <div class="personal" id="personal">
+                        <div class="fasongzhe">
+                            <span>系统消息</span>
+                        </div>
+                        <div class="msg-text">
+                            <span>
+                                无关风月，我题序等你回，快去租一辆车吧
+                            </span>
+                        </div>
+                        <div class="yidu-botton" id="yidu-botton">
+                            <input type="hidden" class="user-id" value="aaa">
+                            <input type="hidden" class="user-msg-id" value="aaa">
+                            <a href="javascript:void (0)" class="yidu-botton-rrr">已读</a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+<script src="../js/customer_center.js"></script>
+<script src="../js/preferential.js"></script>
+<script src="../js/common.js"></script>
+</body>
+</html>

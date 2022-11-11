@@ -1,0 +1,21 @@
+.word{
+    width: 400px;
+    height: 150px;
+    /*background-color: red;*/
+    margin: 0 auto;
+    margin-top: 200px;
+
+}
+
+.word h1{
+    /*text-align: center;*/
+    color: #31b0d5;
+    margin-left: 80px;
+    margin-bottom: 20px;
+
+}
+
+.word p{
+    line-height: 40px;
+    font-size: 20px;
+}

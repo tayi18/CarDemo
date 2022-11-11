@@ -1,0 +1,250 @@
+/*======================通用标题内容=-===================*/
+
+/*===========================内容======================================*/
+.w1180 .image-size img{
+    width: 1180px;
+    height: 500px;
+}
+
+.left-littleimage .left-little-ul li{
+
+    width: 179px;
+    float: left;cursor:pointer;
+
+}
+.image-size .left-littleimage img{
+    width: 100px;
+    height: 50px;
+    position: relative;
+    top: 100px;
+    right: 10px;
+}
+/*图片盒子*/
+.hotcar-intro{
+    height: 566px;
+    margin-top: 10px;
+    width: 1180px;
+}
+/*==============================左边内容==========================================*/
+.hotcar-intro .hotcar-left .hotcar-bt{
+    color: #666;
+    margin-bottom: 5px;
+}
+
+/*==============================右边内容=================*/
+.hotcar-banner{
+    float: left;
+}
+
+
+.hotcar-banner img{
+    display: block;
+    width: 404px;
+    height: 520px;
+}
+
+.hotcar-right {
+    float: right;
+    width: 776px;
+    height: 500px;
+    position: relative;
+}
+.hotcar-right .right-show-car-image img{
+    width: 776px;
+    height: auto;
+    float: left;
+}
+
+.hotcar-right a {
+    display: block;
+    float: left;
+    position: relative;
+    width: 386px;
+    height: 258px;
+    font-size: 14px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ebebeb #ebebeb #ebebeb #fff;
+    overflow: hidden;
+}
+
+
+.iconmore {
+    background: url(http://r1nxp2i0y.hn-bkt.clouddn.com/images/iconmore.png) no-repeat;
+}
+
+.hoticon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 44px;
+    height: 44px;
+    background-position: -536px 0;
+    transform: rotate(
+            90deg
+    );
+    -webkit-transform: rotate(
+            90deg
+    );
+}
+
+.hotcar-info {
+    /*padding: 20px 16px;*/
+    /*margin-left: 100px;*/
+    float: right;
+    margin-bottom: 10px;
+}
+
+.hotcar-name {
+    font-size: 24px;
+    color: #333;
+    line-height: 34px;
+    margin-bottom: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.hotcar-type span {
+    color: #ff7e00;
+    line-height: 1;
+    padding: 5px 10px;
+    margin-right: 6px;
+    border-radius: 4px;
+    border: 1px solid #FF7E00;
+    display: inline-block;
+}
+
+.hotcar-price {
+    margin-top: 12px;
+    color: #666;
+}
+
+.hotcar-price span {
+    font-size: 12px;
+    color: #ff7e00;
+}
+
+.hotcar-price span em {
+    font-size: 24px;
+    font-style: normal;
+}
+
+.hotcar-price span {
+    font-size: 15px;
+    color: #ff7e00;
+}
+.hotcar-price .original{
+    font-size: 12px;
+    color: gray;
+    font-weight: bolder;
+    text-decoration: line-through;
+}
+.hotcar-car {
+    position: absolute;
+    left: 1px;
+    /*bottom: 2px;*/
+    /*background: transparent;*/
+    /*margin-left: 50px;*/
+}
+
+.hotcar-box{
+    border: 1px solid gray;
+}
+.hotcar-car img {
+    width: 213px;
+    height: 134px;
+}
+
+
+/*=========================轮播图====================*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+/* 给最大盒子设置样式---整个轮播图放置位置的盒子 */
+
+.carousel {
+    width: 100%;
+    height: 378px;
+    margin: 0 auto;
+    /* 定位 */
+    position: relative;
+}
+/* 放置图片的盒子 */
+
+.cal-list {
+    width: 100%;
+    height: 378px;
+    /* ul需要移动 */
+    position: relative;
+    overflow: hidden;
+}
+/* ul元素 */
+
+.viewpage {
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* *****设置6个图片能放置进去的宽度 */
+    width: 600%;
+}
+
+.viewpage li {
+    float: left;
+}
+.viewpage img{
+    width: 1519px;
+    height: 378px;
+}
+/* 小圆点最大的盒子 */
+.circle-list {
+    position: absolute;
+    bottom: 20px;
+    width: 100px;
+    /* height: ; */
+    padding: 5px;
+    left: 50%;
+    margin-left: -50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+
+.circle {
+    float: left;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-left: 6px;
+}
+
+
+.special_active {
+    background-color: #ff5e00;
+}
+/* 给左右按钮添加样式 */
+
+.prev,
+.next {
+    width: 30px;
+    height: 50px;
+    /*background-color: rgba(0, 0, 0, 0.3);*/
+    position: absolute;
+    top: 40%;
+    font-size: 30px;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 0 25px 25px 0;
+    display: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 25px 0 0 25px;
+}

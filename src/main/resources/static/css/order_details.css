@@ -1,0 +1,301 @@
+
+dd {
+    display: block;
+    /*margin-inline-start: 40px;*/
+}
+
+#content .content-bd {
+    overflow: hidden;
+}
+.header-bd, .navigation-bd, .crumbs-bd, .content-bd, .footer-bd {
+    min-width: 1180px;
+    width: 1180px;
+    margin: 0 auto;
+}
+.hide{
+    display: none;
+}
+/*左侧导航*/
+.con-left {
+    float: left;
+    width: 190px;
+    background-color: #f5f5f5;
+    color: #6b6b6b;
+}
+.sub-nav dt {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #e7e7e7;
+    font-weight: 700;
+}
+.sub-nav dd {
+    padding: 6px 0;
+}
+.sub-nav a {
+    position: relative;
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    padding-left: 50px;
+    color: #6b6b6b;
+    border-left: 6px solid #f5f5f5;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.sub-nav a:hover, .sub-nav a.ck {
+    background-color: #fff;
+    color: #23b7b7;
+    font-weight: 700;
+    border-left-color: #23b7b7;
+    text-decoration: none;
+}
+/*右侧内容*/
+.col-main{
+    position: relative;
+    width: 970px;
+    float: left;
+    margin-left: 20px;
+}
+/*用户信息*/
+.information  {
+    border: 1px solid #e7e7e7;
+    margin-bottom: 30px;
+
+}
+
+.order_information{
+    width: 100%;
+    height: 120px;
+    border-bottom:1px solid #e7e7e7 ;
+}
+
+.order_information h1{
+    padding: 10px;
+}
+
+.order_information p{
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+/*车辆信息*/
+.order_car_details{
+    width: 100%;
+    height: 300px;
+    /*border: 1px solid gray;*/
+    /*background-color: #31b0d5;*/
+
+}
+
+/*=======车辆图片=====================*/
+.order_car_details .car_picture{
+    display: block;
+    float: left;
+    width: 25%;
+    height: 150px;
+    margin-top: 10px;
+    /*background-color: #b92c28;*/
+    text-align: center;
+}
+
+.order_car_details .car_picture img{
+    width: 100%;
+    height: 100%;
+}
+
+.order_car_details .car_picture span{
+    color: red;
+}
+
+/*=======车辆提车地点===================*/
+.order_car_details .order_car_describe{
+    display: block;
+    float: left;
+    width: 40%;
+    height: 280px;
+    margin-left: 30px;
+    /*background-color: #C9C9C9;*/
+}
+
+.order_car_details .order_car_describe .car_name{
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    /*background-color: red;*/
+}
+
+.order_car_details .order_car_describe .car_name p{
+    display: block;
+    float: left;
+    font-size: 25px;
+}
+
+.order_car_details .order_car_describe .car_name .details{
+    display: block;
+    float: left;
+    font-size: 12px;
+    color: #31b0d5;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.order_car_details .order_car_describe .car_name .fanhui{
+    display: block;
+    float: right;
+    font-size: 12px;
+    color: #31b0d5;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.order_car_details .order_car_describe .car_address{
+    width: 100%;
+    height: 200px;
+    /*background-color: #31b0d5;*/
+}
+
+.order_car_details .order_car_describe .car_address ul{
+    list-style: none;
+}
+
+.order_car_details .order_car_describe .car_address table{
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.order_car_details .order_car_describe .car_address  .address_a{
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.order_car_details .order_car_describe .car_address td {
+    font-size: 13px;
+    margin-right: 50px;
+}
+
+.order_car_details .order_car_describe .car_address  p{
+    font-weight: bolder;
+    font-size: 15px;
+}
+/*换车按钮*/
+.order_car_details .order_success{
+    width: 20%;
+    height: 150px;
+    float: right;
+    /*margin-right: 20px;*/
+    text-align: right;
+}
+.order_car_details .order_success .order_success_button{
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+    color: #23b7b7;
+    background-color: rgba(195, 176, 145, 0.1);
+}
+.order_car_details .order_success .order_success_button:hover{
+    background-color:#23b7b7;;
+    color: white;
+
+}
+
+/*费用明细*/
+.order_pay{
+    width: 100%;
+    height: 50px;
+    background-color: #f5f5f5;
+    line-height: 50px;
+    padding-left: 10px;
+    color: orange;
+}
+
+.order_pay_{
+    width: 100%;
+    height: 300px;
+}
+
+.order_pay_ li{
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.order_pay_ li .price1 {
+    margin-left: 480px;
+}
+
+.order_pay_ li .price2{
+    margin-left: 506px;
+
+}
+.order_pay_ li .price3{
+    margin-left: 779px;
+
+}
+.order_pay_ li .price4{
+    margin-left: 807px;
+
+}
+.order_pay_ li .price5{
+    margin-left: 795px;
+
+}
+
+.order_pay_ li h3{
+    font-size: 25px;
+    color: red;
+    margin-left: 735px;
+}
+
+.order_pay_ li h4{
+    margin-left: 808px;
+}
+
+
+.window_css {
+    display: none;
+    position: fixed;
+    top: 40%;
+    left: 65%;
+    width: 400px;
+    height: 330px;
+    border: 3px solid #FF7E00;
+    background-color: aliceblue;
+    z-index: 11;
+}
+
+.comm-box{
+    width: 100%;
+    height: 85%;
+    /*top: 10%;*/
+    /*left: 5%;*/
+    border: none;
+    position: relative;
+    /*text-align: center;*/
+    padding-top: 0;
+    overflow: auto;
+    resize: none;
+}
+
+.comm-btn {
+    display: inline-block; !important;
+    width: 50px; !important;
+    margin-left: 30%; !important;
+}
+
+.clear-btn{
+    display: inline-block; !important;
+    width: 50px; !important;
+    margin-left: 5%; !important;
+}
+
+#jixu{
+    color: #23b7b7;
+    background-color:rgba(195, 176, 145, 0.1) ;
+    width: 90px;
+    height: 30px;
+
+}
+

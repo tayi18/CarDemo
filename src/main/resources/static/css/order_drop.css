@@ -1,0 +1,474 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#main .pre_title{
+    width: 100%;
+    height: 50px;
+    background-color: #C9C9C9;
+    line-height: 50px;
+}
+#main .pre_title h3{
+    margin-left: 10px;
+}
+
+/*=========================================================================*/
+#main{
+    width: 80%;
+    height: 830px;
+    /*background-color: #b92c28;*/
+    margin: 0 auto;
+    min-width: 1200px;
+    margin-top: 30px;
+}
+
+/*============================车辆信息=========================================*/
+#main .order_details{
+    display: block;
+    float: left;
+    width: 68%;
+    /*height: 750px;*/
+    border: 1px solid gray;
+    /*background-color: #31b0d5;*/
+
+}
+/*=======车辆图片=====================*/
+#main .order_details .car_picture{
+    display: block;
+    float: left;
+    width: 30%;
+    height: 150px;
+    margin-top: 10px;
+    /*background-color: #b92c28;*/
+    text-align: center;
+}
+
+#main .order_details .car_picture img{
+    width: 100%;
+    height: 100%;
+}
+
+#main .order_details .car_picture span{
+    color: red;
+}
+
+/*=======车辆提车地点===================*/
+#main .order_details .car_describe{
+    display: block;
+    float: right;
+    width: 68%;
+    height: 280px;
+    /*background-color: #C9C9C9;*/
+}
+
+#main .order_details .car_describe .car_name{
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    /*background-color: red;*/
+}
+
+#main .order_details .car_describe .car_name p{
+    display: block;
+    float: left;
+    font-size: 25px;
+}
+
+#main .order_details .car_describe .car_name .details{
+    display: block;
+    float: left;
+    font-size: 12px;
+    color: #31b0d5;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#main .order_details .car_describe .car_name .layui-btn-normal{
+    display: block;
+    float: right;
+    font-size: 12px;
+    /*color: white;*/
+
+    margin-right: 20px;
+    margin-top: 10px;
+    color: #00a5cb;
+}
+
+#main .order_details .car_describe .car_address{
+    width: 100%;
+    height: 200px;
+    /*background-color: #31b0d5;*/
+}
+
+#main .order_details .car_describe .car_address ul{
+    list-style: none;
+}
+
+#main .order_details .car_describe .car_address table{
+    width: 100%;
+    height: 100%;
+
+
+}
+
+#main .order_details .car_describe .car_address  .address_a{
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+#main .order_details .car_describe .car_address td {
+    font-size: 13px;
+    margin-right: 50px;
+}
+
+#main .order_details .car_describe .car_address  p{
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+/*==================优惠活动========================================================*/
+#main .preferential{
+    width: 100%;
+    /*height: 550px;*/
+    /*background-color: palevioletred;*/
+    margin-top: 280px;
+}
+
+#main .preferential .pre_content{
+    width: 100%;
+    height: 100%;
+    /*background: #31b0d5;*/
+}
+
+#main .preferential .pre_content input{
+    margin: 20px;
+}
+
+#main .preferential .coupon{
+    display: none;
+    width: 100%;
+    height: 230px;
+    /*border: 1px solid red;*/
+}
+
+#main .preferential .coupon1{
+    width: 25%;
+    height: 90px;
+    background: orange;
+    color: white;
+    font-size: 12px;
+    margin-left: 55px;
+    border: 1px solid orange;
+    display: block;
+    float: left;
+    margin-top: 10px;
+}
+
+#main .preferential .coupon1 p{
+    margin-top: 5px;
+}
+
+#main .preferential .coupon1 .part_coupon1{
+    width: 100%;
+    height: 30px;
+    background: white;
+    color: #31b0d5;
+    margin-bottom: 0;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 7px;
+}
+
+#main .preferential .pre_content .new_user{
+    display: none;
+    width: 100%;
+    height: 100px;
+    /*background: #b2b2b2;*/
+}
+
+
+
+/*============发票信息=================*/
+
+#main .service .ser_content{
+    width: 95%;
+    /*height: 200px;*/
+    margin: 10px;
+    /*background: orange;*/
+    color: #00a5cb;
+    line-height: 25px;
+}
+
+#main .service .ser_content p{
+    font-size: 14px;
+}
+
+/*#main .service .ser_content input{*/
+/*    margin-top: 30px;*/
+/*    margin-left: 20px;*/
+/*    margin-right: 20px;*/
+/*    display: block;*/
+/*    float: left;*/
+/*}*/
+
+/*#main .service .ser_content .protection{*/
+/*    display: block;*/
+/*    float: left;*/
+/*    width: 93.5%;*/
+/*    height: 70px;*/
+/*    !*background-color: #31b0d5;*!*/
+/*}*/
+
+/*#main .service .ser_content .protection ul{*/
+/*    list-style: none;*/
+/*}*/
+/*#main .service .ser_content .protection ul li{*/
+/*    float: left;*/
+/*    margin-top: 20px;*/
+/*}*/
+
+/*#main .service .ser_content .protection ul li .name{*/
+/*    font-weight: bolder;*/
+/*    font-size: 14px;*/
+/*}*/
+
+/*#main .service .ser_content .protection ul li .introduce{*/
+/*    font-size: 12px;*/
+/*    color: gray;*/
+/*}*/
+
+/*#main .service .ser_content .protection ul li .limited{*/
+/*    width: 55px;*/
+/*    text-align: center;*/
+/*    font-size: 12px;*/
+/*    color: white;*/
+/*    background-color: #31b0d5;*/
+
+/*}*/
+
+/*#main .service .ser_content .protection ul .center{*/
+/*    margin-left: 150px;*/
+/*    margin-top: 35px;*/
+/*    font-size: 12px;*/
+/*    color: gray;*/
+/*}*/
+
+/*#main .service .ser_content .protection ul .center1{*/
+/*    margin-left: 143px;*/
+/*}*/
+
+/*#main .service .ser_content .protection ul .right{*/
+/*    margin-left: 150px;*/
+/*    margin-top: 28px;*/
+/*    color:#31b0d5;*/
+/*    font-size: 15px;*/
+/*}*/
+
+/*#main .service .ser_content .protection ul .right .original{*/
+/*    font-size: 12px;*/
+/*    color: gray;*/
+/*    font-weight: bolder;*/
+/*    text-decoration: line-through;*/
+/*}*/
+
+
+
+    /*=====================费用明细================================================*/
+#main .order_confirm{
+    display: block;
+    float: right;
+    width: 30%;
+    height: 450px;
+    border: 1px solid gray;
+    z-index: -1;
+
+}
+
+#main .order_confirm .expense_statement ul{
+    list-style: none;
+}
+#main .order_confirm .expense_statement ul li{
+    width: 100%;
+    height: 70px;
+
+}
+
+hr{
+    border: none;
+    border-bottom: 1px dashed gray;
+
+}
+
+#main .order_confirm .expense_statement ul li p{
+    margin: 10px;
+    font-weight: bolder;
+    color: grey;
+}
+
+#main .order_confirm .expense_statement ul li p .price{
+    margin-left: 100px;
+}
+
+#main .order_confirm .expense_statement ul li .exp_add{
+    font-size: 12px;
+    font-weight: 100;
+}
+
+#main .order_confirm .expense_statement ul li p .price img{
+    position: relative;
+    top: 5px;
+}
+
+/*=========隐藏元素========*/
+#main .order_confirm .expense_statement ul li .date{
+    display: none;
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px dashed gray;
+}
+#main .order_confirm .expense_statement ul li .date1{
+    display: block;
+    float: left;
+    width: 90px;
+    height: 45px;
+    background-color: gainsboro;
+    font-size: 12px;
+    font-weight: 100;
+    text-align: center;
+    margin-left: 10px;
+    line-height: 10px;
+}
+
+#main .order_confirm .expense_statement ul li .date2{
+    display: block;
+    float: left;
+    width: 90px;
+    height: 45px;
+    background-color: gainsboro;
+    font-size: 12px;
+    font-weight: 100;
+    text-align: center;
+    margin-left: 10px;
+    line-height: 10px;
+}
+
+#main .order_confirm .expense_statement ul .border{
+    display: inline-block;
+    width: 100%;
+    height: 60px;
+    /*background: #31b0d5;*/
+    /*border-bottom: 1px dashed gray;*/
+}
+
+#main .order_confirm .expense_statement ul .border .price{
+    margin-left: 165px;
+}
+
+#main .order_confirm .expense_statement ul .border p{
+    /*margin-top: 15px;*/
+}
+
+#main .order_confirm .expense_statement .service_price{
+    margin-left: 200px;
+}
+
+#main .order_confirm .expense_statement .service_price img{
+    position: relative;
+    top: 5px;
+}
+
+#main .order_confirm .expense_statement  .expenses{
+    display: none;
+    width: 100%;
+    height: 100px;
+
+}
+
+#main .order_confirm .expense_statement ul li .expenses1{
+    width: 90%;
+    height: 30px;
+    background-color: gainsboro;
+    font-size: 13px;
+    font-weight: 100;
+    margin-left: 10px;
+    line-height: 30px;
+}
+
+#main .order_confirm .expense_statement ul li .youzhi{
+    display: none;
+}
+
+#main .order_confirm .expense_statement ul li .expenses1 p{
+    background: gainsboro;
+    padding-left: 5px;
+
+
+}
+
+#main .order_confirm .expense_statement ul li .expenses1 .expenses_price{
+    color: red;
+    margin-left: 225px;
+}
+
+#main .order_confirm .expense_statement ul li .expenses1 .expenses1_price{
+    color: red;
+    margin-left: 180px;
+}
+
+#main .order_confirm .expense_statement ul li .deposit{
+    width: 100%;
+    height: 70px;
+    /*border-top: 1px solid gray;*/
+    border-bottom: 1px solid gray;
+}
+
+#main .order_confirm .expense_statement ul li .deposit .tui{
+    color: red;
+}
+
+#main .order_confirm .expense_statement ul li .deposit .price{
+    margin-left: 153px;
+}
+
+#main .order_confirm .expense_statement ul li .deposit .price1{
+    margin-left: 167px;
+}
+
+#main .order_confirm .expense_statement ul li .total_price{
+    width: 100%;
+    height: 60px;
+    /*background-color: #b92c28;*/
+    color: #31b0d5;
+    font-size: 30px;
+    text-align: right;
+    line-height: 60px;
+
+}
+
+#main .order_confirm .expense_statement ul li .total_price .t_price{
+    margin-right: 25px;
+}
+
+#main .order_confirm .expense_statement ul li .total_price .a_{
+    width: 150px;
+    height: 50px;
+    background-color: #31b0d5;
+    text-align: center;
+    line-height: 50px;
+    margin-left: 184px;
+    font-size: 20px;
+
+}
+
+#main .order_confirm .expense_statement ul li .total_price .a_ a{
+    color: white;
+}
+
+.a_{
+    border: 0;
+}
+

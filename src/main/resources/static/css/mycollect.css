@@ -1,0 +1,165 @@
+ul{
+    list-style: none;
+    float: left;
+}
+
+a{
+    text-decoration: none;
+}
+.collect{
+    width:100%;
+    height: 1000px;
+    /*background-color: wheat;*/
+}
+.collect-main-box {
+    width: 1350px;
+    zoom: 1;
+    /*border: 1px solid #ccc;*/
+    margin: 20px auto;
+}
+/*.collect-main-box ul{
+    margin-left: 8px;
+}*/
+.collect-main-box .mycollect-text{
+    width: 1400px;
+    text-align: center;
+    font-size: 24px;
+}
+.collect-main-box .mycollect-text p{
+
+}
+.collect-main-box li{
+    float: left;
+    border: 1px solid #ccc;
+    margin: 5px;
+
+}
+.collect-car-box {
+    width: 575px;
+    height: 190px;
+    /*border-bottom: 1px solid #ccc;*/
+    position: relative;
+    color: #666;
+    float: left;
+
+
+}
+.collect-car-box .car-img {
+    width: 250px;
+    height: 170px;
+    float: left;
+}
+.collect-car-box .car-img img {
+    width: 250px;
+    height: 170px;
+    float: left;
+}
+
+.collect-car-box .car-esc .esc{
+    float: right;
+    padding-top: 5px;
+    padding-right: 15px;
+    text-align: right;
+    font-size: 10px;
+    background-color: white;
+    border: none;
+    outline: none;
+}
+.collect-car-box .car-esc .esc:hover{
+    color: #23b7b7;
+}
+
+.collect-car-box .car-tittle{
+    float: left;
+    width: 55%;
+}
+.collect-car-box .car-tittle .car-name {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+
+.collect-car-box .car-info {
+    width: 130px;
+    height: 120px;
+    margin-top: 8px;
+    float: left;
+    padding-left: 15px;
+    /*padding-right:15px;*/
+}
+
+.collect-car-box .car-info .car-des {
+    font-size: 16px;
+
+}
+.collect-car-box .car-info .car-des li{
+    border: none;
+}
+.collect-car-box .car-infoother {
+    width: 130px;
+    height: 120px;
+    margin-top: 3px;
+    float: left;
+    padding-left: 30px;
+}
+.collect-car-box .car-infoother .car-des {
+    font-size: 16px;
+    margin-top: 5px;
+}
+.collect-car-box .car-infoother li{
+    border: none;
+}
+.collect-car-box .car-infoother .view-car-para {
+    color: #23b7b7;
+    font-size: 14px;
+    font-weight: bolder;
+    display: inline-block;
+    vertical-align: middle;
+    /*margin-top: 15px;*/
+}
+
+/*推荐车辆*/
+.recommend-main-box{
+    width: 260px;
+    float: right;
+    position: absolute;
+    border: 1px solid #ccc;
+    margin-left: 1260px;
+    margin-top: 5px;
+
+}
+.recommend-main-box .recommend-title{
+    margin-top: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-family:Arial,Helvetica,sans-serif;
+    line-height:1em;
+    color: #23b7b7;
+
+}
+.recommend-main-box .recommend{
+    width: 250px;
+    height: 710px;
+    border: #b2dba1;
+}
+.recommend-main-box .recommend .recommend-img{
+    width: 240px;
+    height: 174px;
+}
+.recommend-main-box .recommend .recommend-img img{
+    width: 240px;
+    height: 174px;
+}
+.recommend-main-box .recommend .recommend-text{
+    text-align: center;
+}
+.recommend-main-box .recommend .recommend-text span{
+    /*margin-left: 5px;*/
+}
+.recommend-main-box .recommend .recommend-price{
+    text-align: center;
+    font-size: 16px;
+    color: #d32323;
+}
+

@@ -1,0 +1,53 @@
+/*地图信息框样式*/
+.content-window-card {
+    position: relative;
+    box-shadow: none;
+    bottom: 0;
+    left: 0;
+    /* width: auto; */
+    width: 28rem;
+    padding: 0;
+}
+
+.content-window-card p {
+    height: 2rem;
+}
+.custom-input-card {
+    width: 22rem;
+}
+
+.custom-input-card .btn {
+    margin-right: 1rem;
+}
+
+.custom-input-card .btn:last-child {
+    margin-right: 0;
+}
+
+.info-title {
+    color: white;
+    font-size: 14px;
+    background-color: #25A5F7;
+    line-height: 26px;
+    padding: 0px 0 0 6px;
+    font-weight: lighter;
+    letter-spacing: 1px
+}
+
+.info-content {
+    font: 12px Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial;
+    padding: 4px;
+    color: #666666;
+    line-height: 23px;
+    background-color: white;
+}
+
+.info-content img {
+    float: left;
+    margin: 3px;
+}
+
+.amap-info-combo .keyword-input{
+    height: 25px;
+    border-radius: 2px 0 0 2px;
+}

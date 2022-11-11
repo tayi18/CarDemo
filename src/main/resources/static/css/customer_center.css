@@ -1,0 +1,453 @@
+
+dd {
+    display: block;
+    /*margin-inline-start: 40px;*/
+}
+
+#content .content-bd {
+    overflow: hidden;
+}
+.header-bd, .navigation-bd, .crumbs-bd, .content-bd, .footer-bd {
+    min-width: 1180px;
+    width: 1180px;
+    margin: 0 auto;
+}
+.hide{
+    display: none;
+}
+/*左侧导航*/
+.con-left {
+    float: left;
+    width: 190px;
+    background-color: #f5f5f5;
+    color: #6b6b6b;
+}
+.sub-nav dt {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #e7e7e7;
+    font-weight: 700;
+}
+.sub-nav dd {
+    padding: 6px 0;
+}
+.sub-nav a {
+    position: relative;
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    padding-left: 50px;
+    color: #6b6b6b;
+    border-left: 6px solid #f5f5f5;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+/*.sub-nav a:hover{*/
+/*    color: #23b7b7;*/
+/*}*/
+.sub-nav a:hover, .sub-nav a.ck {
+    background-color: #fff;
+    color: #23b7b7;
+    font-weight: 700;
+    border-left-color: #23b7b7;
+    text-decoration: none;
+}
+/*右侧内容*/
+.col-main{
+    position: relative;
+    width: 970px;
+    float: left;
+    margin-left: 20px;
+}
+/*用户信息*/
+.information h2 {
+    border: 1px solid #e7e7e7;
+    border-bottom: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #efefef;
+    font-weight: 700;
+}
+
+.information-index {
+    padding: 30px;
+}
+.mod {
+    border: 1px solid #e7e7e7;
+}
+.ui-bfc {
+    overflow: hidden;
+}
+.information-index-panel {
+    width: 660px;
+    margin: 0 auto;
+}
+.ui-bfc-bd {
+    overflow: hidden;
+    _zoom: 1;
+}
+table {
+    display: table;
+    text-indent: initial;
+    border-collapse: collapse;
+    border-spacing: 0;
+    max-width: 100%;
+    background-color: transparent;
+    border-color: grey;
+}
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+tr{
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.information-index-panel .bd td {
+    padding: 5px 8px;
+    font-size: 14px;
+    line-height: 30px;
+    height: 35px;
+
+}
+.information-index-panel .bd .cell-title {
+    width: 95px;
+    font-weight: 700;
+    text-align: right;
+    font-size: 14px;
+    line-height: 30px;
+    vertical-align: top;
+}
+.information-index-panel .bd p, .information-index-panel .bd input {
+    float: left;
+    width: 180px;
+    height: 28px;
+    line-height: 28px;
+}
+.gray {
+    color: #d4d4d4;
+}
+a {
+    text-decoration: none;
+    color: #23b7b7;
+}
+.information-index-panel .bd .cell-title {
+    width: 95px;
+    font-weight: 700;
+    text-align: right;
+    font-size: 14px;
+    line-height: 30px;
+    vertical-align: top;
+}
+
+/*头像*/
+.information-index-panel .hd {
+    position: relative;
+    margin-right: 20px;
+    padding-top: 10px;
+}
+.ui-bfc-hd {
+    float: left;
+    _display: inline;
+}
+
+/*
+.user-information-index-panel .bd .dashed-border {
+    background-position: 0 -30px;
+}
+.dashed-border {
+    width: 100%;
+    height: 1px;
+    line-height: 0;
+    font-size: 0;
+    !*background: url() repeat-x 0 0;*!
+    overflow: hidden;
+}*/
+.information .information-changepassword .operate-panel, .information .information-validate .step-one .operate-panel, .information .information-validate .step-two .operate-panel {
+    text-align: left;
+}
+.information .operate-panel {
+    padding: 30px 0;
+    text-align: center;
+}
+.information .operate-panel a {
+    margin: 20px 40px;
+}
+.ui-btn-white-l {
+    padding: 0 30px;
+}
+.ui-btn-white-s, .ui-btn-white-l, .ui-btn-white-xl {
+    background: #fff;
+    color: #23b7b7;
+    border-color: #029696;
+}
+.ui-btn {
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    display: inline-block;
+    font-size: 18px;
+    /*color: #fff;*/
+    border-width: 1px 1px 3px 1px;
+    border-style: solid;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+/*修改密码*/
+.mod {
+    border: 1px solid #e7e7e7;
+}
+.information-changepassword {
+    padding: 30px;
+}
+
+.information-changepassword td {
+    padding: 10px 8px;
+}
+
+.information-changepassword .cell-title {
+    font-weight: 700;
+    text-align: right;
+    font-size: 14px;
+    line-height: 38px;
+    vertical-align: top;
+}
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+    text-indent: 5px;
+    font-size: 8px;
+}
+.information-changepassword input {
+    float: left;
+    width: 270px;
+    height: 36px;
+    line-height: 36px;
+    /*border:none;*/
+    border: 1px solid #e7e7e7;
+}
+.information-changepassword em {
+    float: left;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 38px;
+    padding-left: 5px;
+    color: #f00;
+}
+.pwd-prompt {
+    float: left;
+    width: 242px;
+    margin-left: 10px;
+    padding: 0 5px;
+}
+.information .information-changepassword .operate-panel {
+    text-align: left;
+}
+
+.ui-btn-orange-s, .ui-btn-orange-l, .ui-btn-orange-xl {
+    background: #FF7E00;
+    color: #fff !important;
+    border-color: #ca6600;
+}
+.ui-btn-orange-l {
+    padding: 0 40px;
+}
+/*修改个人信息*/
+.information-changeuser{
+    padding: 30px;
+}
+
+.myinfo {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: rgba(0,0,0,.85);
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5715;
+    list-style: none;
+    font-feature-settings: "tnum";
+}
+.information-changeuser td {
+    padding: 5px 8px;
+}
+.information-changeuser .cell-title {
+    font-weight: 700;
+    text-align: right;
+    font-size: 14px;
+    line-height: 34px;
+    vertical-align: top;
+}
+.information-changeuser input {
+    float: left;
+    width: 270px;
+    height: 30px;
+    line-height: 36px;
+    border: 1px solid #e7e7e7;
+}
+.information-changeuser em {
+    float: left;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 38px;
+    padding-left: 5px;
+    color: #f00;
+}
+.information-changeuser .gerderBtn{
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    float: left;
+}
+.information-changeuser .gerderTip{
+    margin-left: 10px;
+    float: left;
+}
+.ui-btn-white-s:hover, .ui-btn-white-l:hover, .ui-btn-white-xl:hover {
+    background: #4ecece;
+    color: #fff;
+    text-decoration: none;
+}
+.information-changeuser .operate-panel {
+    padding: 30px 0;
+    text-align: left;
+}
+.information-changeuser .msgTip{
+    width: 200px;
+    height: 40px;
+    /* background-color: aquamarine; */
+    float: left;
+    display: block;
+    line-height: 40px;
+    font-size: 10px;
+    color: #4ecece;
+    margin-left: 20px;
+}
+
+
+
+.personal-msg{
+    font-size: 20px;
+    width: 100%;
+    height:43px;
+}
+.personal{
+    float: left;
+    border-top: 1px solid lavender;
+    width: 100%;
+    height: 70px;
+    background-color: #f2f2f2;
+}
+.fasongzhe{
+    margin-left: 10px;
+    width: 15%;
+    height: 100%;
+    float: left;
+}
+.fasongzhe span{
+    text-align: center;
+    line-height: 70px;
+    font-weight:bolder;
+    width: 20%;
+    color: #ff9200;
+    font-size: 16px;
+    margin-left: 10px;
+}
+.msg-text{
+    width: 73%;
+    height: 70px;
+    color: #0C0C0C;
+    font-size: 13px;
+    float: left;
+}
+.msg-text span{
+
+    text-align: center;
+    line-height: 70px;
+}
+.yidu-botton{
+    margin-top: 20px;
+
+}
+.yidu-botton a{
+    outline:none;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 22px;
+    color: #ffffff;
+    background-color: #4ecece;
+    display: block;
+    float: left;
+    height: 22px;
+    width: 7%;
+}
+
+
+
+.personal-msg{
+    font-size: 20px;
+    width: 100%;
+    height:43px;
+}
+.personal{
+    float: left;
+    border-top: 1px solid lavender;
+    width: 100%;
+    height: 70px;
+    background-color: #f2f2f2;
+}
+.fasongzhe{
+    margin-left: 10px;
+    width: 15%;
+    height: 100%;
+    float: left;
+}
+.fasongzhe span{
+    text-align: center;
+    line-height: 70px;
+    font-weight:bolder;
+    width: 20%;
+    color: #ff9200;
+    font-size: 16px;
+    margin-left: 10px;
+}
+.msg-text{
+    width: 75%;
+    height: 70px;
+    color: #0C0C0C;
+    font-size: 13px;
+    float: left;
+}
+.msg-text span{
+
+    text-align: center;
+    line-height: 70px;
+}
+.yidu-botton{
+    margin-top: 20px;
+
+}
+.yidu-botton a{
+    outline:none;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 22px;
+    color: #ffffff;
+    background-color: #4ecece;
+    display: block;
+    float: left;
+    height: 22px;
+    width: 5%;
+}

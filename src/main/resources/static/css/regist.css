@@ -1,0 +1,192 @@
+.head{
+    width: 100%;
+    height: 56px;
+    padding: 25px 0 15px;
+    display: block;
+}
+.top{
+    width: 1180px;
+    height: 55px;
+    margin: 0 auto;
+    position: relative;
+
+}
+.top .top-phone{
+    width: 600px;
+    height: 20px;
+    position: absolute;
+    right: 45px;
+    top: 25px;
+    text-align: right;
+}
+/*热门电话*/
+.phone{
+    display: inline-block;
+
+    width: 137.74px;
+    height: 20px;
+    margin-right: 50px;
+    float: right;
+}
+.phone i{
+    font-size: 14px;
+    color: #666666;
+    font-family: "黑体";
+}
+.phone span{
+    font-size: 14px;
+    color: #FF7E00;
+}
+
+.logo .logo-img{
+    display: block;
+    width: 275px;
+    height: 92px;
+    /*float: left;*/
+    top: 0;
+    left: 0;
+    /*position: absolute;*/
+    /*background-size: contain;*/
+    margin-bottom: 2px;
+}
+form{
+
+    width: 100%;
+    min-width: 1280px;
+    height: 709px;
+    background-size: cover;
+
+    background: url(../images/login-img.jpg) no-repeat center 0;
+}
+.regist-body{
+    margin-top: 22px;
+    width: 1280px;
+    height: 100%;
+    /*margin: 0 auto;*/
+    position: relative;
+
+}
+a{
+    color: #1E9FFF;
+    text-decoration: none;
+}
+/*注册外框*/
+.login-register{
+    position: absolute;
+    top: 0;
+    right: 0;
+    /*margin-right: 100px;*/
+    width: 420px;
+    height: 550px;
+    margin-top: 100px;
+
+    border-radius: 12px;
+    background-color: white;
+}
+.regist-body h2{
+    text-align: center;
+    margin-top: 50px;
+}
+.regist-input ul li span{
+    color: red;
+    font-size: 10px;
+}
+#checkTip{
+    color: red;
+    font-size: 10px;
+}
+
+.input-regist{
+    width: 320px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+    border-bottom: 1px solid #ECECEC;
+    position: relative;
+    margin-top: 5px;
+    font-family: inherit;
+    color: inherit;
+    outline-style: none;
+}
+.input-regist1{
+    width: 230px;
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+    border-bottom: 1px solid #ECECEC;
+    position: relative;
+    margin-top: 5px;
+    font-family: inherit;
+    color: inherit;
+    outline-style: none;
+}
+.regist-input li{
+    margin-top: 10px;
+    position: relative;
+}
+ul,li{
+    list-style: none;
+}
+
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+/*注册按钮*/
+.registBtn {
+
+
+    /*background-color: #FF7E00;*/
+    /*color: white;*/
+
+
+
+}
+.registBtn input {
+    text-align: center;
+    padding: 10px;
+    width: 60%;
+    margin-top: 40px;
+    margin-left: 80px;
+    background-color: #FF7E00;
+    color: white;
+    text-decoration-line: none;
+    border-radius: 20px;
+}
+.phoneTip,.pasdTip{
+    font-size: 8px;
+    line-height: 10px;
+    color: red;
+    margin-top: 5px;
+}
+.login{
+    margin-top: 10px;
+    margin-left:135px;
+}
+.btn{
+
+
+    bottom: 1px;
+    right: 0;
+    padding: 0 5px;
+    width: 120px;
+    height: 45px;
+    line-height: 45px;
+    color: #23b7b7;   !important;
+    background: #fff;  !important;
+    text-align: center;
+    border: none;
+    font-size: 14px; !important;
+
+}
+
+.regist-text{
+    font-size: 10px;
+}
+
+.errorMsg{
+    color: #c9302c;
+    font-size: 15px;
+}

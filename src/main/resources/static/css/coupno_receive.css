@@ -1,0 +1,110 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.coupno-receive{
+    margin-top: 15px;
+    /*border:1px solid #676767;*/
+    width: 100%;
+    height: 500px;
+    /*background-color: #f6f6f6;*/
+
+}
+.coupno-real{
+    margin-left: 42px;
+    margin-top: 30px;
+    float: left;
+    height: 127px;
+    width: 350px;
+
+    /*border: 1px solid #f2f2f2;*/
+}
+.coupno-real .coupno-img img{
+    height: 78%;
+    width: 119px;
+    margin-top: 15px;
+}
+.coupno-real .coupno-img{
+    float: left;
+    background-color:rgb(129,207,254,0.62);
+    height: 100%;
+    width: 119px;
+}
+.coupno-left{
+    height: 100%;
+    width: 85%;
+    float: left;
+/*  缺角  */
+    background:     radial-gradient(circle at top right, transparent 10px,rgb(129,207,254,0.62) 0) top right,
+    radial-gradient(circle at bottom right, transparent 10px,rgb(129,207,254,0.62) 0) bottom right;
+    /*border: 1px solid chartreuse ;*/
+    background-size: 60% 50%;
+    background-repeat: no-repeat;
+
+
+}
+/*!*缺角*!*/
+/*.q-circle .i1{*/
+/*    float: right;*/
+/*    background-color: #00F7DE;*/
+/*    width: 5px;*/
+/*    height: 5px;*/
+/*    top: -1px;*/
+/*    background-position: 0 -9px;*/
+/*}*/
+.coupno-right{
+    width: 14%;
+    margin-left: 0.5px;
+    height: 100%;
+    float: left;
+    background:     radial-gradient(circle at top left, transparent 10px,rgb(129,207,254,0.62) 0) top left,
+    radial-gradient(circle at bottom left, transparent 10px, rgb(129,207,254,0.62) 0) bottom left;
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+
+}
+
+
+.coupno-left .coupno-price{
+    margin-top: 20px;
+    margin-left: 10px;
+    /*width: 160px;*/
+    height: 60px;
+    float: left;
+}
+/*价格样式*/
+.coupno-price .price{
+
+    font-size: 27px;
+    color: red;
+    height: 30px;
+    float: left;
+}
+.coupno-price .price-plus{
+    width: 84px;
+    text-align: center;
+    margin-left: 15px;
+    line-height: 30px;
+    height: 30px;
+    color: #f23030;
+    background:  #fff4ec;
+    font-size: 10px;
+    float: left;
+    border-radius: 6px;
+}
+.coupno-left .coupno-condition{
+    margin-left: 10px;
+    float: left;
+    /*width: 160px;*/
+}
+.coupno-right a{
+    color: #ffffff;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    width: 10px;
+    display: block;
+}
+
+

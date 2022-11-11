@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>车型查询</title>
+
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <link rel="stylesheet" href="../css/car_select.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../layui/layui.js"></script>
+</head>
+<body>
+<!-- 头部导航 -->
+<div class="header">
+    <!-- header-top -->
+    <div class="header-top">
+        <div class="middle">
+            <ul class="right">
+                <a href="javascript:void(0)">帮助中心</a><span>|</span>
+                <a href="javascript:void(0)">400-321-2202</a><span>|</span>
+                <p href="javascript:void()">微信</p>
+            </ul>
+            <ul class="left">
+                <a href="../customer/login.html" class="loginAfter">登陆</a><span>|</span>
+                <a href="../customer/regist.html" class="registAfter">注册</a><span>|</span>
+                <a href="" class="bye hide">退出</a>
+                <p class="name" >我的随行</p>
+            </ul>
+        </div>
+    </div>
+    <!-- header-navigation -->
+    <div class="header-navigation">
+        <div class="middle">
+            <!-- log -->
+            <div class="header-img">
+                <img src="../images/header-logo.png" alt="">
+            </div>
+            <div class="header-nav">
+                <li><a href="../index.html" class="header-word">首页<span></span> </a></li>
+                <li><a href="../car_rental/car_filter.html"  class="header-word">去租车<span></span></a></li>
+                <li><a  href="../car_rental/car_select.html"  class="header-word header_active">车型查询<span></span></a></li>
+                <li><a href="../network/businessoutlets.html"  class="header-word">网点导航<span></span></a></li>
+                <li><a href="../customer/customer_center.html"  class="header-word">个人中心<span></span></a></li>
+                <li><a href="../preferential/special_models.html" class="header-word">特价优惠</a><span></span></li>
+                <li><a href="../customer/mycollect.html" class="header-word">我的收藏</a><span></span></li>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 商品展示和筛选 -->
+<div class="car-pro">
+    <div class="middle">
+
+        <!-- 搜索 -->
+        <div class="pro-way">
+            <div class="pro-withdraw-select" >
+                <!-- 地点选择 -->
+                <div class="pro-withdraw-qick">
+                    <!-- 取车 -->
+                    <label>请输入车辆关键字:</label>
+                    <input class="car-search" value="" placeholder="请输入车辆相关信息进行查询">
+                </div>
+                <div class="pro-sumbit">
+
+                    <a href="javascript:void(0)">
+                        立即查询
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- 条件筛选 -->
+        <div class="pro-condition">
+            <!-- 品牌 -->
+            <div class="car-brand">
+                <div class="car-lable">品牌:</div>
+                <div class="car-name">
+                    <li><a href="javascript:void(0)">雪弗兰 </a></li>
+                    <li><a href="javascript:void(0)">大众 </a></li>
+                    <li><a href="javascript:void(0)">福特 </a></li>
+                    <li><a href="javascript:void(0)">本田 </a></li>
+                    <li><a href="javascript:void(0)">丰田 </a></li>
+                    <li><a href="javascript:void(0)">马自达 </a></li>
+                    <li><a href="javascript:void(0)">吉利 </a></li>
+                    <li><a href="javascript:void(0)">标致 </a></li>
+                    <li><a href="javascript:void(0)">别克 </a></li>
+                    <li><a href="javascript:void(0)">铃木 </a></li>
+                    <li><a href="javascript:void(0)">华晨华颂 </a></li>
+                    <li><a href="javascript:void(0)">雪铁龙 </a></li>
+                    <li><a href="javascript:void(0)">现代 </a></li>
+                    <li><a href="javascript:void(0)">宝马 </a></li>
+                    <li><a href="javascript:void(0)">奇瑞 </a></li>
+                    <li><a href="javascript:void(0)">比亚迪 </a></li>
+                    <li><a href="javascript:void(0)">奥迪 </a></li>
+                    <li><a href="javascript:void(0)">奔驰 </a></li>
+                    <li><a href="javascript:void(0)">长安 </a></li>
+                    <li><a href="javascript:void(0)">东南 </a></li>
+                    <li><a href="javascript:void(0)">福田 </a></li>
+                    <li><a href="javascript:void(0)">汇众</a></li>
+                    <li><a href="javascript:void(0)">江淮 </a></li>
+                    <li><a href="javascript:void(0)">江铃 </a></li>
+                    <li><a href="javascript:void(0)">金杯 </a></li>
+                    <li><a href="javascript:void(0)">金龙 </a></li>
+                    <li><a href="javascript:void(0)">吉普 </a></li>
+                    <li><a href="javascript:void(0)">荣威 </a></li>
+                    <li><a href="javascript:void(0)">五菱 </a></li>
+                    <li><a href="javascript:void(0)">宇通 </a></li>
+                    <li><a href="javascript:void(0)">特斯拉 </a></li>
+                    <li><a href="javascript:void(0)">东风风神 </a></li>
+                    <li><a href="javascript:void(0)">之诺 </a></li>
+                    <li><a href="javascript:void(0)">众泰 </a></li>
+                    <li><a href="javascript:void(0)">东风日产 </a></li>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <!-- 商品展示区 -->
+        <div class="pro-product">
+            <!-- 商品1 -->
+<!--            <div class="pro-rearly">-->
+<!--                <a href="javascript:void(0)">-->
+<!--                    <div class="img">-->
+<!--                        <img src="../images/index_img/car-c1.png" alt="">-->
+<!--                    </div>-->
+<!--                    &lt;!&ndash; 车辆信息 &ndash;&gt;-->
+<!--                    <div class="information">-->
+<!--                        <div class="in-top">-->
+<!--                            <li><a class="car-name">荣威Ei6沪牌</a></li>-->
+<!--                        </div>-->
+<!--                        <div class="in-middle">-->
+<!--                            <li class="info">-->
+<!--                                <a>自动 1.5T</a>-->
+<!--                                <a>三箱</a>-->
+<!--                                <a>5座</a>-->
+<!--                            </li>-->
+<!--                        </div>-->
+
+<!--                    </div>-->
+<!--                    &lt;!&ndash; 价格 &ndash;&gt;-->
+<!--                    <div class="pro-price">-->
+<!--                        <div class="pro-text">-->
+<!--                            <a>¥</a>-->
+<!--                            <a>120</a>-->
+<!--                            <span>/日</span>-->
+<!--                        </div>-->
+
+<!--                    </div>-->
+<!--                </a>-->
+<!--            </div>-->
+
+        </div>
+    </div>
+</div>
+<!-- 底部导航栏 -->
+<div class="index-bottom">
+    <div class="middle">
+        <!-- 账户服务 -->
+        <div class="bottom-account">
+            <ul>
+                <span>新手指南</span>
+                <li><a href="javascript:void(0)">注册新用户</a></li>
+                <li><a href="javascript:void(0)">预定演示</a></li>
+                <li><a href="javascript:void(0)">取消或者修改订单</a></li>
+            </ul>
+            <ul>
+                <span>租车贴士</span>
+                <li><a href="javascript:void(0)">支付方式</a></li>
+                <li><a href="javascript:void(0)">精彩活动</a></li>
+
+            </ul>
+            <ul>
+                <span>售后服务</span>
+                <li><a href="javascript:void(0)">联系售后</a></li>
+
+            </ul>
+            <ul>
+                <span>会员服务</span>
+                <li><a href="javascript:void(0)">忘记密码</a></li>
+                <li><a href="javascript:void(0)">会员充值</a></li>
+                <li><a href="javascript:void(0)">积分说明</a></li>
+
+
+            </ul>
+            <ul>
+                <span>网站帮助</span>
+                <li><a href="javascript:void(0)">注册新用户</a></li>
+
+                <li><a href="javascript:void(0)">联系我们</a></li>
+            </ul>
+            <ul>
+            </ul>
+            <ul>
+
+            </ul>
+
+        </div>
+        <!--相关信息-->
+        <div class="connect">
+            <div class="line-one">
+                <li><a>关于随行</a></li> <span>｜</span>
+                <li><a>移动客户端</a></li> <span>｜</span>
+                <li><a>帮助中心</a></li> <span>｜</span>
+                <li><a>投诉</a></li> <span>｜</span>
+                <li><a>联系我们</a></li>
+            </div>
+            <div class="line-two">
+                <a>
+                    Copyright © 2007-2022 苏州随行信息技术服务有限公司  &nbsp;
+                    ICP证：沪B2-20140130沪ICP备08010394号 &nbsp;&nbsp;
+                    违法和不良信息举报：fuzhaohong@1hai.cn</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../js/common.js"></script>
+<script src="../layui/layui.js"></script>
+<script src="../js/car_select.js"></script>
+</body>
+</html>

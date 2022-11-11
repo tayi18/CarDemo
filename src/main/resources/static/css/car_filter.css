@@ -1,0 +1,601 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* ============商品展示和筛选============== */
+.car-pro{
+    margin-top: 15px;
+    min-width:1100px;
+    /* height: 1000px; */
+}
+/* --地图-- */
+.car-pro .map{
+
+    width: 270px;
+    margin-left:937px;
+    height: 270px;
+    border: 1px solid gray;
+    position:fixed;
+}
+.car-pro .map-xingxi{
+    margin-top: 272px;
+    width: 270px;
+    margin-left:937px;
+    border: 1px solid gray;
+    height: 270px;
+    position:fixed;
+}
+.car-pro .map-xingxi li{
+    margin-left: 14px;
+    margin-top: 14px;
+    list-style-type: none;
+}
+.car-pro .map-xingxi .l1{
+    margin-top: 33px;
+    font-size: 14px;
+    list-style-type: none;
+}
+.car-pro .map-xingxi .l2{
+    font-weight: bolder;
+    margin-top: 3px;
+    font-size: 13px;
+    list-style-type: none;
+}
+.car-pro .map-xingxi .l3{
+    font-weight: bolder;
+    font-size: 12px;
+}
+
+/* --取车时间和地点 */
+/* ==============取车还车时间选择=========== */
+
+.pro-way {
+    float: left;
+    width: 900px;
+    height: 85px;
+    background-color: #f5f5f5;
+    border: 1px solid #c8c7c7;
+}
+.pro-way .pro-withdraw-select{
+    float: left;
+    margin-top: 15px;
+    width: 900px;
+    height: 100px;
+}
+
+/* 取车 */
+
+.pro-withdraw-qick{
+    float: left;
+    width: 380px;
+    height: 85px;
+    margin-left: 13px;
+}
+
+.pro-withdraw-qick li {
+    height: 40px;
+    list-style: none;
+}
+.pro-withdraw-qick li div{
+    float: left;
+}
+
+.pro-withdraw-qick label,.pro-time-select label{
+    float: left;
+    font-weight: bolder;
+    width: 75px;
+    font-size: 14px;
+}
+
+.pro-withdraw-qick .left,.pro-withdraw-qick .left1{
+    float: left;
+    width: 260px;
+    padding-left: 18px;
+
+}
+
+
+.pro-withdraw-qick .left div input,.pro-withdraw-qick .left1 div input{
+    width: 114px;
+    height: 23px;
+    border: 1px solid #a0a0a0;
+    margin-left: 1px;
+    border-radius: 0px;
+}
+/* ---------取车窗口--------- */
+
+.showAll ,.showAll1{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    z-index: 9999;
+    border: 1px solid #c9c9c9;
+    background-color: #f6f6f6;
+
+}
+.showAll .select span,.showAll1 .select span{
+    margin-top: 5px;
+    margin-left: 5px;
+    float: left;
+    font-size: 13px;
+    
+}
+.select {
+    float: left;
+}
+.select .select-city,.select .select-city1{
+    border-bottom: 1px solid #c9c9c9;
+    margin-top: 10px;
+    float: left;
+    width: 300px;
+
+}
+.botto{
+    border-bottom: 1px solid #c9c9c9;
+}
+.select .select-area,.select .select-area1{
+    margin-top: 25px;
+
+    float: left;
+    width: 100%;
+ 
+}
+.select-city a,.select-city1 a{
+    text-align: center;
+    margin-left: 15px;
+    line-height: 30px;
+    display: block;
+    float: left;
+    width: 52px;
+    height: 100%;
+    background-color: #22c4d6;
+}
+
+.select-area a, .select-area1 a{
+    text-align: center;
+    margin-top: 3px;
+    margin-left: 15px;
+    line-height: 30px;
+    display: block;
+    float: left;
+    width: 50px;
+    font-size: 10px;
+    height: 100%;
+    background-color: #22c4d6;
+}
+
+.select .select-store,.select .select-store1{
+    margin-top: 25px;
+
+    float: left;
+    width: 100%;
+
+}
+.select-store a,.select-store1 a{
+    text-align: center;
+    margin-top: 3px;
+    margin-left: 15px;
+    line-height: 30px;
+    display: block;
+    float: left;
+    width: 90px;
+    font-size: 10px;
+    height: 100%;
+    background-color: #22c4d6;
+}
+
+/* 还车 */
+
+.layui-form{
+    margin-bottom: 0;
+    width: 125px;
+    float: left;
+}
+
+/* 日期选择 */
+.pro-time-select div{
+    height: 40px;
+}
+.pro-time-select {
+    float: left;
+    height: 80px;
+    width: 340px;
+}
+
+
+.pro-time-select .time-qick{
+    width: 254px;
+    float: left;
+}
+
+#test-limit3{
+    margin-left: 1px;
+}
+.pro-time-select  .layui-input{
+   
+    border: 1px solid #a0a0a0;
+    border-radius: 0px;
+    height: 23px;
+    width: 125px;
+}
+.pro-time-select .layui-form-item{
+    float: left;
+    height: 10px;
+
+}
+.layui-form-item .layui-input-inline{
+    float: left;
+    width: 95px;
+    z-index: 999;
+    /* margin-right: 10px; */
+}
+.pro-time-select .time-return{
+    width: 251px;
+    float: left;
+}
+.pro-time-qick,.time-return{
+    height: 75px;
+    width: 179px;
+}
+/* 立即选车 */
+.pro-sumbit{
+    text-align: center;
+    line-height: 30px;
+    width: 80px;
+    float: left;
+    height: 60px;
+}
+.pro-sumbit a{
+    border-radius: 3px;
+    color: aliceblue;
+    margin:  0 auto;
+    margin-top: 10px;
+    display: block;
+    height: 33px;
+    width: 147px;
+    font-size: 17px;
+    font-weight: bolder;
+    background-color: #37c4ca ;
+}
+/*p排序*/
+.pro-sort{
+    margin-top: 15px;
+    border:  1px solid #bdb7b7;
+    width: 900px;
+    float: left;
+    height: 24px;
+}
+.pro-sort .rg{
+    font-size: 13px;
+    text-align: center;
+    float: right;
+    border: none;
+    width: 25%;
+    line-height: 24px;
+}
+.pro-sort .sort-bot img{
+    margin-top: -2px;
+    height: 13px;
+    width: 13px;
+}
+.pro-sort .sort-bot{
+
+    border-right:  1px solid #bdb7b7;
+    float: left;
+    font-size: 13px;
+    line-height: 24px;
+    text-align: center;
+    width: 18%;
+    height: 24px;
+}
+.sort-active{
+    background-color: #80f3ff;
+}
+
+/* -------条件筛选区域 */
+.pro-condition{
+    float: left;
+    width: 900px;
+    margin-top: 14px;
+}
+
+.pro-condition .car-model{
+    border-top: 1px solid #a0a0a0;
+    border-left: 1px solid #a0a0a0;
+    border-right: 1px solid #a0a0a0;
+    float: left;
+    width: 100%;
+    height: 80px;
+}
+
+/* 热门车型 */
+.car-model .hot-car-model{
+    text-align: center;
+    float: left;
+    height: 100%;
+    width: 9%;
+}
+.car-model li{
+    margin-left: 3px;
+    border-left: 1px solid #ececec;
+    width: 10%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+.car-model li span{
+
+    width: 100%;
+    height: 15px;
+
+}
+
+.car-model li a {
+    
+    font-size: 13px;
+    color: #787474;
+    display: block;
+    width: 100%;
+    height: 100%;
+
+}
+.car-model li a:hover {
+    color: #37c4ca;
+    font-weight: bolder;
+}
+.car-model li .hot-active{
+    color: #37c4ca;
+    font-weight: bolder;
+}
+.hot-car-model img{
+    width: 52px;
+    height: 52px;
+}
+.car-model li img{
+    width: 75px;
+    height: 53px;
+}
+/* 筛选品牌 */
+.pro-condition .car-brand{
+    float: left;
+    width: 100%;
+    border-top: 1px solid #a0a0a0;
+    border-left: 1px solid #a0a0a0;
+    border-right: 1px solid #a0a0a0;
+}
+.car-brand li {
+    
+    text-align: center;
+    line-height: 23px;
+    float: left;
+    height: 40px;
+    width: 70px;
+}
+.car-brand li a { 
+    font-size: 12.5px;
+    margin-top: 9px;
+    margin-left: 8px;
+    display: block;
+    width: 80%;
+    height: 24px;    
+    color: #787474;
+}
+.car-brand li a:hover,.car-price li a:hover{
+    color: #1d1d1d;
+    background-color:  #37c4ca;
+}
+.car-brand li .active,.car-price li .active {
+    color: #1d1d1d;
+    background-color:  #37c4ca;
+}
+ .car-lable{
+    margin-left: 12px;
+    float: left;
+    width: 34px;
+    height: 100%;
+    line-height: 40px;
+    text-align: center;
+    font-size: 12.5px;
+}
+.car-brand .car-name{
+    float: left;
+    width: 94%;
+}
+/* 价格筛选 */
+.pro-condition .car-price{
+    border: 1px solid #a0a0a0;
+    float: left;
+    width: 100%;
+    height: 50px;
+}
+.car-price li{
+    text-align: center;
+    line-height: 23px;
+    float: left;
+    height: 40px;
+    width: 74px;
+}
+.car-price li a{
+    font-size: 12.5px;
+    margin-top: 9px;
+    margin-left: 8px;
+    display: block;
+    width: 80%;
+    height: 24px;
+    color: #787474;
+
+}
+
+
+
+
+
+/* -------商品展示区 */
+.pro-product{
+    width: 900px;
+    float: left;
+    list-style-type: none;
+}
+.pro-product .pro-sort{
+    border:  1px solid #bdb7b7;
+    width: 100%;
+    height: 24px;
+}
+.pro-product .pro-sort li{
+    font-size: 13px;
+    line-height: 24px;
+    text-align: center;
+    width: 15%;
+    height: 24px;
+    border-right:  1px solid #bdb7b7;
+    float: left;
+    margin-left: 10px;
+}
+.pro-product .pro-sort .rg{
+    float: right;
+    border: none;
+    width: 25%;
+}
+/* 商品展示 */
+.pro-product .pro-rearly{
+    border-bottom: 1px solid silver;
+    width: 100%;
+    height: 154px;
+    float: left;
+}
+.pro-rearly .img img{
+    margin-top: 18px;
+    width: 190px;
+    height: 100%;
+    float: left;
+}
+.pro-rearly .information{
+    margin-left: 27px;
+    width: 200px;
+    height: 100%;
+    float: left;
+}
+/*  车辆详情 */
+.information .car-name{
+    color: black;
+    font-size: 16px;
+    float: left;
+    font-weight: bolder;
+}
+.information .in-top,.information .in-middle,.information .in-bottom{
+    width: 100%;
+    height: 21%;
+
+}
+.information .in-top{
+    margin-top: 32px;
+}
+.pro-rearly .information .info a{
+    font-size: 13px;
+    text-decoration: none;
+    margin-left: 3px;
+}.pro-rearly .information .info span{
+     margin-left: 3px;
+ }
+/* 车辆价格 */
+.pro-price{
+    float: left;
+    height: 100%;
+    width: 130px;
+    margin-left: 260px;
+}
+.pro-price .pro-text{
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    color: #22c4d6;
+    margin-top: 60px;
+}
+.info .info-detalis{
+    color:#22c4d6;
+}
+.pro-bottom{
+    float: left;
+    width: 7%;
+    height: 100%;
+}
+.pro-bottom .pro-order{
+    color: #fef9f9;
+    border-radius: 2px;
+    margin-top: 60px;
+    text-align: center;
+    line-height: 28px;
+    width: 64px;
+    height: 28px;
+    background-color: rgb(68 215 222);
+}
+/*车辆标签*/
+.pro-rearly .information .lable a{
+    text-align: center;
+    font-size: 13px;
+    color: #ff911c;
+    margin-right: 5px;
+    display: block;
+    float: left;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #fcf4f0;
+}
+/* 翻页 */
+.car-pro .page-select{
+    /*border-bottom: 1px solid #9a9494;*/
+    /*border-top: 1px solid #9a9494;*/
+    /*margin-top: 20px;*/
+    /*margin-bottom: 20px;*/
+    /*text-align: center;*/
+    /*float:left;*/
+    /*width: 75%;*/
+    /*height: 30px;*/
+    /*color: #ff911c;*/
+    /*background-color: #fef9f9;*/
+}
+/*.page-select-lam{*/
+/*    margin-top: 5px;*/
+/*}*/
+
+/*.page-select span{*/
+/*    font-size: 13px;*/
+/*    color: #1d1d1d;*/
+/*}*/
+/*.page-select a{*/
+/*    font-size: 15px;*/
+/*    text-decoration: none;*/
+/*    color: #ff911c;*/
+/*}*/
+/*.page-select .sel,.page-select a{*/
+/*    border-bottom: 1px solid #9a9494;*/
+/*}*/
+
+/*分页*/
+.pagination {
+    margin-top: 20px;
+    margin-left: 20%;
+    float: left;
+    display: inline-block;
+}
+
+.pagination a {
+    border-radius: 3px;
+    color: black;
+    float: left;
+    padding: 11px 18px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+.pagination a.active {
+    width:8.79px;
+    height: 17px;
+    background-color: rgb(68 215 222);
+    color: white;
+}
+
+.pagination a:hover:not(.active) ,.pagination span:hover:not(.active) {
+    background-color: #ddd;
+}

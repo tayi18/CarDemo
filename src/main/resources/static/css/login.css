@@ -1,0 +1,358 @@
+/*头部*/
+.head{
+    width: 100%;
+    height: 56px;
+    padding: 25px 0 15px;
+}
+.top{
+    width: 1180px;
+    height: 55px;
+    margin: 0 auto;
+    position: relative;
+
+}
+.top .top-phone{
+    width: 600px;
+    height: 20px;
+    position: absolute;
+    right: 45px;
+    top: 25px;
+    text-align: right;
+}
+.phone{
+    display: inline-block;
+
+    width: 137.74px;
+    height: 20px;
+    margin-right: 50px;
+    float: right;
+}
+.phone i{
+    font-size: 14px;
+    color: #666666;
+    font-family: "黑体";
+}
+.phone span{
+    font-size: 14px;
+    color: #FF7E00;
+}
+.logo .logo-img{
+    width: 200px;
+    height: 60px;
+    float: left;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-size: contain;
+}
+
+form{
+    margin-top: 30px;
+    width: 100%;
+    min-width: 1280px;
+    height: 709px;
+    background: url(../images/login-img.jpg) no-repeat center 0px;
+    background-size: cover;
+
+    background-position: center 0;
+}
+.login-body{
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.login-register{
+    position: absolute;
+    top: 0;
+    right: 70px;
+    width: 420px;
+    height: 500px;
+    margin-top: 100px;
+    background: #fff;
+    border-radius: 12px;
+}
+.login-register_head{
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.login-register_head strong{
+
+    font-size:20px ;
+}
+.popup-logininfo{
+    margin-top: 50px;
+}
+.poupp-logintab{
+    padding-bottom: 5px;
+}
+
+.poupp-logintab li.poupp-logincur{
+    color: #FF7E00;
+    border-bottom: 2px solid #FF7E00;
+}
+
+.popup-logininfo h3{
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 500;
+    text-align: center;
+
+    columns: #3a3e4f;
+    padding: 42px 0 20px;
+}
+
+.poupp-logintab li.poupp-logincur{
+    color: #FF7E00;
+    border-bottom: 2px solid #FF7E00;
+}
+
+.poupp-logintab li{
+    position: relative;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 8px 0;
+    float: left;
+    width: 50px;
+    text-align: center;
+    cursor: pointer;
+    width: 40%;
+    margin-left: 10px;
+}
+
+ul,li,ol{
+    list-style: none;
+}
+
+.popup-loginbox{
+    width: 320px;
+    height: 100%;
+
+}
+.input-info{
+    width: 80%;
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+    border-bottom: 1px solid #ECECEC;
+    position: relative;
+    margin-top: 5px;
+}
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+.input-info1{
+    width: 60%;
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+    border-bottom: 1px solid #ECECEC;
+    position: relative;
+    float: left;
+    margin-top: 5px;
+}
+/*获得验证码*/
+.smscode{
+
+
+    bottom: 1px;
+    right: 0;
+    padding: 0 5px;
+    width: 100px;
+    height: 45px;
+    line-height: 45px;
+    color: #23b7b7;
+    background: #fff;
+    text-align: center;
+    border: none;
+    font-size: 12px;
+
+}
+
+.popup-inputbox li{
+    width: 320px;
+    height: 40px;
+}
+.login-wrapper {
+    background-color: #fff;
+    width: 358px;
+    height: 588px;
+    border-radius: 15px;
+    padding: 0 50px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.header {
+    font-size: 38px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 200px;
+}
+.input-item {
+    width: 80%;
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+    border-bottom: 1px solid #ECECEC;
+    position: relative;
+
+}
+.input-item:placeholder {
+    text-transform: uppercase;
+}
+.codebtn{
+    text-align: center;
+    /*padding: 10px;*/
+    width: 60%;
+    margin-top: 20px;
+
+    background-color: #FF7E00;
+    color: white;
+    margin-left: 80px;
+    /*border-radius: 20px;*/
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    /*text-align: center;*/
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    /*border: 1px solid transparent;*/
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/*登录按钮*/
+.btn {
+
+    text-align: center;
+    padding: 10px;
+    width: 60%;
+    margin-top: 20px;
+
+    background-color: #FF7E00;
+    color: white;
+    margin-left: 80px;
+    border-radius: 20px;
+
+}
+.msg {
+    text-align: center;
+    line-height: 98px;
+}
+.btn .login-btn {
+    /*text-decoration-line: none;*/
+    /*color: white;*/
+    background-color: #FF7E00;
+}
+
+.form-wrapper{
+    margin-left: 60px;
+    height: 110px;
+}
+
+.popup-agreement{
+    margin-top: 55px;
+    width: 300px;
+    margin-left: 60px;
+}
+.loginAgree1{
+    margin-top: 10px;
+}
+/*记住账号*/
+.remember-no{
+    margin-top: 16px;
+    width: 300px;
+    margin-left: 60px;
+}
+.popup-login-quick{
+    width: 420px;
+
+}
+
+.type a{
+    color: black;
+}
+.regist{
+    margin-top: 10px;
+    margin-left:140px;
+    /*text-align: center;*/
+}
+/*用户名格式提示*/
+.usernameTip{
+    font-size: 8px;
+    line-height: 10px;
+    color: red;
+    margin-top: 5px;
+}
+/*密码提示*/
+.psdTip{
+    font-size: 6px;
+    line-height: 8px;
+    color: red;
+    margin-top: 5px;
+}
+
+/*手机号提示*/
+.phoneTip{
+    font-size: 8px;
+    line-height: 10px;
+    color: red;
+    margin-top: 5px;
+}
+/*验证码提示*/
+.msgTip{
+    font-size: 8px;
+    line-height: 10px;
+    color: red;
+    margin-top: 5px;
+}
+
+.login-text p{
+    font-size: 10px;
+}
+
+.error{
+    width: 200px;
+    height: 20px;
+    margin-left: 43px;
+    float: left;
+    /* border: 1px solid; */
+    font-size: 10px;
+    line-height: 15px;
+    position: relative;
+    top:8px;
+    text-align: left;
+    padding-left: 15px;
+    color:  rgb(206, 27, 27);
+    font-weight: bolder;
+}
+
+.no-agree{
+    width: 280px;
+    height: 20px;
+    /* border: 1px solid; */
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 10px;
+    line-height: 20px;
+    /*text-align: center;*/
+    color: rgb(206, 27, 27);
+    font-weight: bolder;
+    text-align: left;
+}

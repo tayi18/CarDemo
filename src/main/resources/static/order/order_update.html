@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>支付</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/order_update.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/ajaxfileupload.js"></script>
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <script src="../layui/layui.js"></script>
+</head>
+<body>
+
+<!-- 头部导航 -->
+<div class="header">
+    <!-- header-top -->
+    <div class="header-top">
+        <div class="middle">
+            <ul class="right">
+                <a href="javascript:void(0)">帮助中心</a><span>|</span>
+                <a href="javascript:void(0)">400-321-2202</a><span>|</span>
+                <p href="javascript:void()">微信</p>
+            </ul>
+            <ul class="left">
+                <a href="../customer/login.html" class="loginAfter">登陆</a><span>|</span>
+                <a href="../customer/regist.html" class="registAfter">注册</a><span>|</span>
+                <a href="" class="bye hide">退出</a>
+                <p class="name" >我的随行</p>
+            </ul>
+        </div>
+    </div>
+
+    <!-- header-navigation -->
+    <div class="header-navigation">
+        <div class="middle">
+            <!-- log -->
+            <div class="header-img">
+                <img src="../images/header-logo.PNG" alt="">
+            </div>
+            <div class="header-nav">
+                <li><a href="../index.html" class="header-word">首页</a><span></span></li>
+                <li><a href="../car_rental/car_filter.html"  class="header-word">去租车</a><span></span></li>
+                <li><a  href="../car_rental/car_select.html"  class="header-word">车型查询</a><span></span></li>
+                <li><a href="../network/businessoutlets.html"  class="header-word">网点导航</a><span></span></li>
+                <li><a href="../customer/customer_center.html"  class="header-word">个人中心</a><span></span></li>
+                <li><a href="../preferential/special_models.html" class="header-word">特价优惠</a><span></span></li>
+                <li><a href="../customer/mycollect.html" class="header-word">我的收藏</a><span></span></li>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="information_main_all">
+    <div class="information_main">
+        <div class="information_main_left">
+            <div class="information_main_left_img">
+
+                <form  method="post" enctype="multipart/form-data" class="imageForm1">
+                    <label for="myimage" id="lab-file">上传身份证</label>
+                    <input type="file" name="myimage" onchange="changepic1(this)" class="myimage" id="myimage">
+                    <input type="button" value="确认上传"  data-value="1" class="submitBtn1"  accept="image/jpg,image/jpeg,image/gif,image/png">
+                </form>
+
+                <img class="preImg1"  id="preImg1" style="max-width: 280px;max-height: 160px;margin-top: 10px;margin-left: 90px"/>
+            </div>
+
+            <span class="information_main_font">上传身份证正面图片文件,支持jpg/png,且不超过500kb</span>
+
+            <form class="idCard">
+                <div class="contentBtn1">
+                    <span class="nameBrn"></span>姓&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp名：<input type="text" value="" class="nameBtn" id="idCardName">
+                </div>
+                <div class="contentBtn2">
+                    <span class="nameBrn"></span>性&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp别：<input type="text" value="" class="genderBtn" id="idCardSex">
+                </div>
+                <div class="contentBtn3">
+                    出生日期：<input type="text" value="" class="nameBtn" id="idCardBirth">
+                </div>
+
+                <div class="contentBtn4">
+                    <span class="nameBrn"></span>身份证号：<input type="text" value="" class="idBtn" id="ordPicIdcard">
+                </div>
+
+                <div class="contentBtn1">
+                    <span class="nameBrn"></span>地&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp址：<input type="text" value="" class="addressBtn" id="idCardAddress">
+                </div>
+
+            </form>
+
+        </div>
+
+        <div class="information_main_right">
+            <div class="information_main_left_img">
+
+                <form  method="post" enctype="multipart/form-data" class="imageForm2">
+                    <label for="carimage" id="lab-file2">上传驾驶证</label>
+                    <input type="file" name="carimage" onchange="changepic2(this)" class="carimage"  id="carimage">
+                    <input type="button" value="确认上传" data-value="2" class="submitBtn2" accept="image/jpg,image/jpeg,image/gif,image/png">
+                </form>
+
+                <img class="preImg2"  id="preImg2" style="max-width: 280px;max-height: 160px;margin-top: 10px;margin-left: 90px"/>
+            </div>
+            <span class="information_main_font">上传驾驶证正面图片文件,支持jpg/png,且不超过500kb</span>
+            <form class="driver">
+                <div class="left-input">
+                    <div class="contentBtn1">
+                        <span class="nameBrn"></span>姓&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp名：<input type="text" value="" class="nameBtn" id="driverName">
+                    </div>
+                    <div class="contentBtn2">
+                        <span class="nameBrn"></span>性&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp别：<input type="text" value="" class="genderBtn" id="driverSex">
+                    </div>
+                    <div class="contentBtn3">
+                        <span class="nameBrn"></span>开始时间：<input type="text" value="" class="timeBtn" id="driverStartTime">
+                    </div>
+
+                    <div class="contentBtn5">
+                        <span class="nameBrn"></span>国&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp籍：<input type="text" value="" class="nationBtn" id="driverNation">
+                    </div>
+
+                    <div class="contentBtn1">
+                        <span class="nameBrn"></span>类&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp型：<input type="text" value="" class="nameBtn" id="driverType">
+                    </div>
+                </div>
+
+                <div class="right-bottom">
+                    <div class="contentBtn6">
+                        <span class="nameBrn"></span>结束时间：<input type="text" value="" class="dateBtn" id="driverEndTime">
+                    </div>
+                    <div class="contentBtn7">
+                        <span class="nameBrn"></span>驾驶证号：<input type="text" value="" class="carIdBtn" id="ordPicCard">
+                    </div>
+                    <div class="contentBtn1">
+                        <span class="nameBrn"></span>地&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp址：<input type="text" value="" class="addressBtn" id="driverAddress">
+                    </div >
+                </div>
+
+            </form>
+        </div>
+        <div class="main_footer">
+            <form method="post" action="/updateOrder">
+                <input type="text" name="ordPicIdcard" id="ordPicIdcard1" value="" style="display: none">
+                <input type="text" name="ordId" th:value="*{ordId}" id="ordId" style="display: none">
+                <input type="text" name="ordPicCard"  id="ordPicCard1"   value="" style="display: none">
+                <input type="submit" value="下一步" class="subBtn" >
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="../js/common.js"></script>
+</div>
+<script>
+
+    function changepic1() {
+        var reads = new FileReader();
+        f = $(".myimage").get(0).files[0];
+        reads.readAsDataURL(f);
+        reads.onload = function(e) {
+            $("#preImg1").attr('src',this.result);
+        };
+    }
+
+    function changepic2() {
+        var reads = new FileReader();
+        f = $(".carimage").get(0).files[0];
+        reads.readAsDataURL(f);
+        reads.onload = function(e) {
+            $("#preImg2").attr('src',this.result);
+        };
+    }
+
+    $(".submitBtn1").click(function (){
+
+        var url = "/userIdCard/person";
+
+        var myimage = $(".imageForm1").serialize();
+
+        $.ajaxFileUpload({
+            url:url,
+            dataType:"application/json",
+            secureuri:false,//是否启用安全机制
+            fileElementId:'myimage',
+            success:function (result){
+                result = $.parseJSON(result.replace(/<.*?>/ig,""));
+
+                console.log("result:" + result);
+                // console.log("result"+JSON.stringify(result));
+                console.log("姓名是:"+result.data.name);
+                console.log("性别是:"+result.data.sex);
+                console.log("出生日期是:"+result.data.birth);
+                console.log("身份证号:"+result.data.num);
+                console.log("地址是:"+result.data.address);
+
+                var name=result.data.name;
+                var sex=result.data.sex;
+                var birth=result.data.birth;
+                var num=result.data.num;
+                var address=result.data.address;
+
+                $("#idCardName").val(name);
+                $("#idCardSex").val(sex);
+                $("#idCardBirth").val(birth);
+                $("#ordPicIdcard").val(num);
+                $("#ordPicIdcard1").val(num);
+                $("#idCardAddress").val(address);
+            }
+        } )
+
+    }) ;
+
+    $(".submitBtn2").click(function (){
+        var url = "/carIdCar/car";
+        var carimage = $(".imageForm2").serialize();
+        $.ajaxFileUpload({
+            url:url,
+            dataType:"application/json",
+            secureuri:false,//是否启用安全机制
+            fileElementId:'carimage',
+            success:function (result){
+                result = $.parseJSON(result.replace(/<.*?>/ig,""));
+                console.log(JSON.stringify(result)); //js --> json  结果：{"code":200,"data":20,"reason":"OK"}
+                console.log("姓名是:"+result.data.name);
+                console.log("性别是"+result.data.sex);
+                console.log("国籍是+"+result.data.nation);
+                console.log("类型是"+result.data.vehicle_type);
+                console.log("开始时间"+result.data.start_date);
+                console.log("结束时间是"+result.data.end_date);
+                console.log("驾驶证号"+result.data.num);
+                console.log("地址"+result.data.addr);
+                var name = result.data.name;//姓名
+                var num = result.data.num;//身份证号
+                var birth_date = result.data.birth_date;//生日
+                var sex = result.data.sex;//性别
+                var nation = result.data.nation;//国籍
+                var address = result.data.addr;//住址
+                var vehicle_type = result.data.vehicle_type;//准驾车型
+                var issue_date = result.data.issue_date;//初次领证时间
+                var start_date = result.data.start_date;//有效期开始时间
+                var end_date = result.data.end_date;//有效期结束时间
+
+                $("#driverName").val(name);
+                $("#driverSex").val(sex);
+                $("#driverStartTime").val(start_date);
+                $("#driverNation").val(nation);
+                $("#driverType").val(vehicle_type);
+                $("#driverEndTime").val(end_date);
+                $("#ordPicCard").val(num);
+                $("#ordPicCard1").val(num);
+                var a =$("#ordPicCard1");
+
+                $("#driverAddress").val(address);
+            }
+        } )
+    }) ;
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

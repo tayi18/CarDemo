@@ -1,0 +1,200 @@
+input, button {
+    margin: 0;
+    font-size: 12px;
+    vertical-align: middle;
+}
+ul {
+    list-style: none;
+}
+.business{
+    width: 100%;
+    min-width: 1180px;
+    margin-bottom: -15px;
+}
+/*--地区--*/
+.citybox-display {
+    width: 1080px;
+    margin: 10px auto 20px;
+    border: 1px solid #ccc;
+    display: table;
+}
+.new-city-box {
+    width: 154px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    border-right: 1px solid #ccc;
+    background: #f5f5f5;
+}
+.new-city-box p {
+    font-size: 22px;
+    color: #666;
+}
+.new-area-wrap {
+    background: #fff;
+}
+.new-area-box {
+    margin: 14px 40px;
+    width: 732px;
+}
+.new-area-box a {
+    display: inline-block;
+    padding: 2px 8px;
+    color: #666;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 2px 20px 2px 0;
+}
+.new-area-box .current,.new-area-box a:hover{
+    background:#23b7b7;
+    color:#fff;
+}
+/*--地图--*/
+.business-main-box {
+    width: 100%;
+    border-top: 1px solid #23b7b7;
+    border-bottom: 1px solid #23b7b7;
+}
+/*left*/
+.business-main-box .business-main-box-left {
+    float: left;
+    position: absolute;
+    left: 0;
+    width: 368px;
+    background: #fff;
+    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.store-box {
+    background: url("../images/businessoutlets_icon.png") no-repeat 35px 20px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.business-main-box-left ul {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+.business-main-box-left li {
+    padding-left: 85px;
+}
+.business-main-box-left ul .store-nummark {
+    width: 30px !important;
+    height: 30px !important;
+    display: inline-block;
+    position: absolute;
+    color: #23b7b7;
+    font-size: 14px;
+    font-weight: bolder;
+    left: 35px;
+    top: 25px;
+    height: 50px;
+    text-align: center;
+    padding-left: 0;
+}
+.business-main-box-left .store-name {
+    font-size: 20px;
+    color: #666;
+    padding-top: 15px;
+    cursor: pointer;
+}
+/*.business-main-box-left .store-name em {*/
+/*    width: 16px;*/
+/*    height: 16px;*/
+/*    display: inline-block;*/
+/*    line-height: 16px;*/
+/*    vertical-align: middle;*/
+/*  }*/
+/*.business-main-box-left .store-name .store-tips {*/
+/*    font-size: 12px;*/
+/*    font-style: normal;*/
+/*    color: #FF7E00;*/
+/*    padding: 4px;*/
+/*    margin: -2px 0 0 4px;*/
+/*    border-radius: 3px;*/
+/*    width: auto;*/
+/*    height: auto;*/
+/*    background: #FFEAD6;*/
+/*}*/
+
+.business-main-box-left .store-address {
+    color: #666;
+    font-size: 14px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 15px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.business-main-box-left .store-address span {
+    color: #ED5908;
+}
+.business-main-box-left .store-phone, .business-main-box-left .store-time {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: #666;
+    font-size: 12px;
+}
+.business-main-box-left .store-phone span, .business-main-box-left .store-time span {
+    font-weight: bolder;
+}
+
+/*right*/
+.business-main-box .business-main-box-right {
+    margin-left: 368px;
+    background: #FFC;
+}
+/*地图信息框样式*/
+/*.content-window-card {
+    position: relative;
+    box-shadow: none;
+    bottom: 0;
+    left: 0;
+     width: auto;
+    width: 28rem;
+    padding: 0;
+}
+
+.content-window-card p {
+    height: 2rem;
+}
+.custom-input-card {
+    width: 22rem;
+}
+
+.custom-input-card .btn {
+    margin-right: 1rem;
+}
+
+.custom-input-card .btn:last-child {
+    margin-right: 0;
+}
+
+.info-title {
+    color: white;
+    font-size: 14px;
+    background-color: #25A5F7;
+    line-height: 26px;
+    padding: 0px 0 0 6px;
+    font-weight: lighter;
+    letter-spacing: 1px
+}
+
+.info-content {
+    font: 12px Helvetica, 'Hiragino Sans GB', 'Microsoft Yahei', '微软雅黑', Arial;
+    padding: 4px;
+    color: #666666;
+    line-height: 23px;
+    background-color: white;
+}
+
+.info-content img {
+    float: left;
+    margin: 3px;
+}
+
+.amap-info-combo .keyword-input{
+    height: 25px;
+    border-radius: 2px 0 0 2px;
+}*/
